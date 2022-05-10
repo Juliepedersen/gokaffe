@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/burger.js"></script>
     <title>Forside - Go' Kaffe</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
         <div class="wrapper flex flex-jc-sb flex-ai-c">
             <a class="link" href="index.html">Go' kaffe</a>
             <nav>
-                <ul class="primary-nav">
+                <ul class="primary-nav" data-visible="false">
                     <li><a class="link" href="">Vores menu</a></li>
                     <li class="dropdown-link">
                         <a class="link" href="">Om Go' Kaffe</a>
@@ -31,6 +32,9 @@
                     <li><a class="link" href="login.html">Login</a></li>
                 </ul>
             </nav>
+            <button class="burger" aria-controls="navigation" aria-label="navigation-button" aria-expanded="false">
+                <span class="inner-burger"></span>
+            </button>
         </div>
     </header>
     <footer>

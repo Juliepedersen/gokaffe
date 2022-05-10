@@ -1,0 +1,30 @@
+.wrapper{
+    width: 80%;
+    margin-inline: auto;
+}
+.flex{
+    display: flex;
+}
+.flexc{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-jc-c{
+    justify-content: center;
+}
+.flex-jc-sb{
+    justify-content: space-between;
+}
+.flex-jc-fe{
+    justify-content: flex-end;
+}
+.flex-ai-c{
+    align-items: center;
+}
+.flex-ai-fe{
+    align-items: flex-end;
+}

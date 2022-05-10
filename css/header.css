@@ -1,0 +1,78 @@
+header{
+    background-color: #ede9de;
+    padding-block: .5em;
+    position: relative;
+}
+.primary-nav{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.link{
+    font-size: 1.3rem;
+    color: #000;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.dropdown-link{
+    position: relative;
+}
+.dropdown-link:hover .dropdown{
+    display: block;
+}
+.dropdown{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: hsl(2, 47%, 55%);
+    padding: .4em .8em;
+}
+.dropdown li{
+    white-space: nowrap;
+}
+.burger {
+    all: unset;
+    display: block;
+    position: absolute;
+    width: 36px;
+    aspect-ratio: 1/1;
+    padding-inline: 0.3em;
+    top: 23px;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 200;
+}
+.inner-burger,
+.inner-burger::before,
+.inner-burger::after {
+    display: block;
+    width: 36px;
+    height: 4px;
+    background-color: #000;
+    transition: transform 100ms ease-in-out;
+}
+.inner-burger {
+    position: relative;
+}
+.inner-burger::before,
+.inner-burger::after {
+    position: absolute;
+    content: "";
+}
+.inner-burger::before {
+    top: calc(-4px - 7px);
+}
+.inner-burger::after {
+    top: calc(4px + 7px);
+}
+.burger[aria-expanded=true] .inner-burger {
+    transform: rotateZ(45deg);
+}
+.burger[aria-expanded=true] .inner-burger::before {
+    transform: translateY(calc(4px + 7px)) rotateZ(-90deg);
+}
+.burger[aria-expanded=true] .inner-burger::after {
+    display: none;
+}
