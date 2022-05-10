@@ -3,6 +3,9 @@ header{
     padding-block: .5em;
     position: relative;
 }
+nav{
+    gap: 2rem;
+}
 .primary-nav{
     display: flex;
     gap: 2rem;
