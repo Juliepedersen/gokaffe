@@ -1,3 +1,4 @@
+@import url(reset.css);
 .wrapper{
     width: 80%;
     margin-inline: auto;
@@ -29,19 +30,20 @@
     align-items: flex-end;
 }
 header{
-    background-color: hsl(248, 58%, 61%)
+    background-color: #ede9de;
+    padding-block: .5em;
 }
 .primary-nav{
     display: flex;
     gap: 2rem;
     list-style: none;
 }
-.primary-nav a{
-    text-decoration: none;
-    color: #000;
+.link{
     font-size: 1.3rem;
+    color: #000;
+    text-decoration: none;
 }
-.primary-nav a:hover{
+.link:hover{
     text-decoration: underline;
 }
 .dropdown-link{
@@ -52,9 +54,10 @@ header{
 }
 .dropdown{
     position: absolute;
+    display: none;
     list-style: none;
-    /* display: none; */
-    background-color: hsl(2, 47%, 55%)
+    background-color: hsl(2, 47%, 55%);
+    padding: .4em .8em;
 }
 .dropdown li{
     white-space: nowrap;
