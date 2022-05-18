@@ -4,7 +4,8 @@
 :root{
     --primary-clr: hsl(44, 29%, 90%);
     --secondary-clr: hsl(2, 11%, 44%);
-    --green: hsl(147, 15%, 57%); 
+    --green: hsl(147, 15%, 57%);
+    --black: hsl(2, 11%, 20%);
 }
 .body{
     display: grid;
@@ -119,10 +120,9 @@ nav{
 }
 .cta-btn{
     background-color: var(--green);
-    color: var(--primary-clr);
+    color: var(--black);
     padding: .2em .8em;
     border-radius: 50px;
-    border: 2px solid var(--secondary-clr);
 }
 .burger {
     all: unset;
