@@ -1,11 +1,25 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
-#om{
+
+:root{
+    --primary-clr: hsl(44, 29%, 90%);
+    --secondary-clr: hsl(2, 11%, 44%);
+    --green: hsl(147, 15%, 57%);
+    --black: hsl(2, 11%, 20%);
+}
+.body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-width: 16rem;
+    font-family: 'Oxygen', sans-serif; 
+}
+#om h1{
     font-family: smoothy, sans-serif; 
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
     color: #796261;
     text-align: center;
+    background-color: ;
 }
