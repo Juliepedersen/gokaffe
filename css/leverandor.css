@@ -15,7 +15,8 @@
 
 .holybean {
     height: 600px;
-    background-color: #EDE9DE;
+    background-color: #80a290;
+    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
 }
 
 .smaakageriet {
@@ -23,6 +24,7 @@
     background-color: white;
 }
 
+/* billeder */
 .smaakager {
     max-width: 45%;
 }
