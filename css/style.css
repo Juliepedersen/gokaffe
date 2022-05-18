@@ -61,6 +61,9 @@ header{
     padding-block: .5em;
     position: relative;
 }
+.logo{
+    height: 100px;
+}
 nav{
     gap: 2rem;
 }
