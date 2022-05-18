@@ -6,5 +6,5 @@ fetch("js/users.json")
 function writeData(data){
     data.users.forEach( e => {
         console.log(e.username)
-    });
+    })
 }

@@ -1,16 +1,22 @@
 @import url(reset.css);
-/* GLOBAL CLASSES START*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
 :root{
     --primary-clr: hsl(44, 29%, 90%);
-    --secondary-clr: ;
+    --secondary-clr: hsl(2, 11%, 44%);
+    --green: hsl(147, 15%, 57%); 
 }
 .body{
     display: grid;
     grid-template-rows: auto 1fr auto;
+    min-width: 16rem;
+    font-family: 'Oxygen', sans-serif;
 }
+/* GLOBAL CLASSES START*/
 .wrapper{
-    width: 70%;
+    width: clamp(16rem, 70%, 70rem);
     margin-inline: auto;
+    padding-inline: 1rem;
 }
 .flex{
     display: flex;
@@ -48,6 +54,7 @@
     align-items: flex-end;
 }
 /* GLOBAL CLASSES END */
+
 /* HEADER START */
 header{
     background-color: var(--primary-clr);
@@ -62,11 +69,16 @@ nav{
     list-style: none;
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 100%;
     width: 100%;
     background-color: var(--primary-clr);
-    padding-inline: 40vw;
+    padding-block: .5em 1em;
     display: none;
+}
+.primary-nav > li {
+    border-bottom: 1px solid #000;
+    padding-block: .4em;
+    text-align: center;
 }
 .link{
     font-size: 1.3rem;
@@ -88,6 +100,7 @@ nav{
     list-style: none;
     background-color: hsl(2, 47%, 55%);
     padding: .4em .8em;
+    z-index: 20;
 }
 .dropdown li{
     white-space: nowrap;
@@ -99,7 +112,7 @@ nav{
     width: 36px;
     aspect-ratio: 1/1;
     padding-inline: 0.3em;
-    top: 30px;
+    top: 50%;
     left: 20px;
     transform: translateY(-50%);
     z-index: 200;
@@ -145,6 +158,16 @@ nav{
     }
     .primary-nav{
         display: flex;
+        position: static;
+        padding: 0;
+        width: auto;
     }
 }
 /* HEADER END */
+
+/* FOOTER START */
+footer{
+    min-height: 100px;
+    background-color: var(--secondary-clr);
+}
+/* FOOTER END */
