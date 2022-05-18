@@ -64,8 +64,6 @@ header{
     font-weight: 400;
     font-style: normal;
 }
-
-
 .logo{
     height: 100px;
 }
@@ -106,12 +104,17 @@ nav{
     position: absolute;
     display: none;
     list-style: none;
-    background-color: hsl(2, 47%, 55%);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary-clr);
     padding: .4em .8em;
     z-index: 20;
 }
 .dropdown li{
     white-space: nowrap;
+}
+.dropdown li a{
+    color: var(--primary-clr)
 }
 .burger {
     all: unset;
