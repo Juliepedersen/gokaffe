@@ -54,6 +54,9 @@
 .flex-ai-fe{
     align-items: flex-end;
 }
+.gap-200{
+    gap: 2rem;
+}
 /* GLOBAL CLASSES END */
 
 /* HEADER START */
