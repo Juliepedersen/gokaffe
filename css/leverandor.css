@@ -1,0 +1,43 @@
+#leverandor h2 {
+    font-family: smoothy, sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #796261;
+    text-align: center;
+    padding: 20px;
+}
+
+.schweizerbageriet {
+    height: 600px;
+    background-color: white;
+}
+
+.holybean {
+    height: 600px;
+    background-color: #EDE9DE;
+}
+
+.smaakageriet {
+    height: 600px;
+    background-color: white;
+}
+
+.smaakager {
+    max-width: 45%;
+    padding-top: 25px;
+    padding-left: 40px;
+    
+}
+
+.broed {
+    max-width: 45%;
+    padding-top: 25px;
+    padding-left: 40px;
+}
+
+.beans {
+    max-width: 45%;
+    padding-top: 25px;
+    padding-right: 40px;
+}
