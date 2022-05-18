@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script>
     <title>Document</title>
 </head>
-<body>
+<body class="body">
     <header>
         <div class="wrapper flex flex-jc-sb flex-ai-c">
             <a class="link" href="index.html">Go' Kaffe</a>
@@ -33,5 +35,21 @@
             </nav>
         </div>
     </header>
+    <main id="login-site" class="flex flex-center">
+        <form id="login-form">
+            <section>
+                <label for="username">Brugernavn</label>
+                <input type="text" id="username" required>
+                <span class="error-msg"></span>
+            </section>
+            <section>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                <span class="error-msg"></span>
+            </section>
+            <button>Login</button>
+        </form>
+    </main>
+    <script src="js/user.js"></script>
 </body>
 </html>

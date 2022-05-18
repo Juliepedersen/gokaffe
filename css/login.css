@@ -1,0 +1,41 @@
+#login-site{
+    height: 100%;
+}
+#login-form{
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 15px #000;
+    padding: 1.2em;
+    min-width: 20em;
+}
+#login-form section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    gap: .4em;
+}
+#login-form label{
+    font-weight: bolder;
+}
+#login-form button{
+    all: unset;
+    background-color: hsl(207, 69%, 51%);
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: .5em 1em;
+    float: right;
+    font-weight: bolder;
+}
+#login-form button:hover{
+    background-color: hsl(207, 69%, 61%);
+}
+#login-form button::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.error-msg{
+    --error:hsl(0, 58%, 51%);
+    color: var(--error);
+}

@@ -7,9 +7,15 @@ nav{
     gap: 2rem;
 }
 .primary-nav{
-    display: flex;
     gap: 2rem;
     list-style: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    background-color: red;
+    padding-inline: 40vw;
+    display: none;
 }
 .link{
     font-size: 1.3rem;
@@ -42,8 +48,8 @@ nav{
     width: 36px;
     aspect-ratio: 1/1;
     padding-inline: 0.3em;
-    top: 23px;
-    right: 30px;
+    top: 30px;
+    left: 20px;
     transform: translateY(-50%);
     z-index: 200;
 }
@@ -78,4 +84,15 @@ nav{
 }
 .burger[aria-expanded=true] .inner-burger::after {
     display: none;
+}
+.burger[aria-expanded=true] + .primary-nav{
+    display: flex;
+}
+@media screen and (min-width: 600px) {
+    .burger{
+        display: none;
+    }
+    .primary-nav{
+        display: flex;
+    }
 }
