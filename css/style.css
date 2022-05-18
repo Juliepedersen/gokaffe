@@ -71,7 +71,7 @@ nav{
     gap: 2rem;
 }
 .primary-nav{
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
     position: absolute;
     left: 0;
@@ -115,6 +115,12 @@ nav{
 }
 .dropdown li a{
     color: var(--primary-clr)
+}
+.cta-btn{
+    background-color: var(--green);
+    color: var(--primary-clr);
+    padding: .2em .8em;
+    border-radius: 50px;
 }
 .burger {
     all: unset;
