@@ -60,6 +60,9 @@ header{
     background-color: var(--primary-clr);
     padding-block: .5em;
     position: relative;
+    font-family: smoothy, sans-serif; 
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -86,7 +89,7 @@ nav{
     text-align: center;
 }
 .link{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: var(--secondary-clr);
     text-decoration: none;
 }
