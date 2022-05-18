@@ -14,7 +14,7 @@
 }
 /* GLOBAL CLASSES START*/
 .wrapper{
-    width: clamp(16rem, 70%, 70rem);
+    width: clamp(16rem, 90vw, 90rem);
     margin-inline: auto;
     padding-inline: 1rem;
 }
@@ -121,6 +121,7 @@ nav{
     color: var(--primary-clr);
     padding: .2em .8em;
     border-radius: 50px;
+    border: 2px solid var(--secondary-clr);
 }
 .burger {
     all: unset;
