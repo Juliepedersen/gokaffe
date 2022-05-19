@@ -67,7 +67,7 @@ header{
     background-color: var(--primary-clr);
     padding-block: .5em;
     font-family: smoothy, sans-serif;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 99999;
