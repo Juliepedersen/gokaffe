@@ -24,7 +24,11 @@
 h1{
     text-align: center;
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-block: 2rem;
+}
+.intro-text{
+    width: 66ch;
+    font-size: 1.3rem;
 }
 .big-section{
     height: 200vh;
