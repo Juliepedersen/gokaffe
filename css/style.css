@@ -190,6 +190,9 @@ nav{
         padding: 0;
         width: auto;
     }
+    .primary-nav > li{
+        border: none;
+    }
 }
 /* HEADER END */
 
