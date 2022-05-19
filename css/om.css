@@ -12,8 +12,8 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-width: 16rem;
-    font-family: 'Oxygen', sans-serif; 
 }
+
 #om h1{
     font-family: smoothy, sans-serif; 
     font-weight: 400;
@@ -22,4 +22,11 @@
     color: #796261;
     text-align: center;
     background-color:hsl(44, 29%, 90%)
+}
+
+.text{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif; 
+    background-color:hsl(44, 29%, 90%)
+    
 }
