@@ -12,14 +12,22 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-width: 16rem;
-    font-family: 'Oxygen', sans-serif; 
 }
+
 #om h1{
     font-family: smoothy, sans-serif; 
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-    color: #796261;
+    color: var(--secondary-clr);
+    padding-left: 30rem;
+    background-color: var(--primary-clr);
+}
+
+.text{
     text-align: center;
-    background-color:hsl(44, 29%, 90%)
+    font-family: 'Oxygen', sans-serif; 
+    color: var(--secondary-clr);
+    background-color: var(--primary-clr);
+    
 }
