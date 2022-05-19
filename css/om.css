@@ -19,14 +19,15 @@
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-    color: #796261;
-    text-align: center;
-    background-color:hsl(44, 29%, 90%)
+    color: var(--secondary-clr);
+    padding-left: 30rem;
+    background-color: var(--primary-clr);
 }
 
 .text{
     text-align: center;
     font-family: 'Oxygen', sans-serif; 
-    background-color:hsl(44, 29%, 90%)
+    color: var(--secondary-clr);
+    background-color: var(--primary-clr);
     
 }
