@@ -6,6 +6,15 @@
     height: auto;
     max-height: calc(100vh - 100px);
 }
+.hero::after{
+    content: "";
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 4%, 25%, 0.1);
+    z-index: 15;
+}
 .hero video{
     grid-column: 1/-1;
     grid-row: 1/-1;
