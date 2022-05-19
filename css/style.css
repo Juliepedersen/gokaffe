@@ -4,14 +4,17 @@
 :root{
     --primary-clr: hsl(44, 29%, 90%);
     --secondary-clr: hsl(2, 11%, 44%);
-    --green: hsl(147, 15%, 57%);
-    --black: hsl(2, 11%, 20%);
+    --green: hsl(145, 15%, 55%);
+    --black: hsl(0, 10%, 10%);
 }
 .body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-width: 16rem;
     font-family: 'Oxygen', sans-serif; 
+}
+main{
+    background-color: var(--primary-clr);
 }
 /* GLOBAL CLASSES START*/
 .wrapper{
@@ -64,9 +67,14 @@ header{
     background-color: var(--primary-clr);
     padding-block: .5em;
     font-family: smoothy, sans-serif;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 9999999;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+}
+.hero-nav{
+    background-color: hsla(0, 0%, 0%, 0.4);
 }
 .logo{
     height: 100px;
@@ -81,7 +89,6 @@ nav{
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: var(--primary-clr);
     padding-block: .5em 1em;
     display: none;
 }
@@ -124,7 +131,7 @@ nav{
     background-color: var(--green);
     color: var(--black);
     padding: .2em .8em;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .burger {
     all: unset;
