@@ -90,10 +90,10 @@ nav{
     top: 100%;
     width: 100%;
     padding-block: .5em 1em;
+    background-color: var(--primary-clr);
     display: none;
 }
 .primary-nav > li {
-    border-bottom: 1px solid #000;
     padding-block: .4em;
     text-align: center;
 }
@@ -136,13 +136,9 @@ nav{
 .burger {
     all: unset;
     display: block;
-    position: absolute;
     width: 36px;
     aspect-ratio: 1/1;
     padding-inline: 0.3em;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
     z-index: 200;
 }
 .inner-burger,
@@ -189,6 +185,7 @@ nav{
         position: static;
         padding: 0;
         width: auto;
+        background-color: transparent;
     }
     .primary-nav > li{
         border: none;
