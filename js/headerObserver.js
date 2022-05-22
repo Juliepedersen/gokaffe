@@ -1,14 +1,8 @@
-const options = {
-    rootMargin: "-100px"
-}
-const headerObs = new IntersectionObserver( entries => {
-    entries.forEach(entry => {  
-        if (entry.isIntersecting) {
-            document.querySelector("header").classList.remove("hero-nav")
-        }
-    })
-}, options)
+const hero = document.querySelector(".hero")
+const header = document.querySelector("header")
 
-document.querySelectorAll("body").forEach(element => {
-    headerObs.observe(element)
-})
+const headerObs = new IntersectionObserver(entries => 
+    header.classList.toggle('hero-nav', entries[0].isIntersecting),
+{threshold: "0.3"})
+
+headerObs.observe(hero)

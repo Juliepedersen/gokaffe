@@ -67,14 +67,18 @@ header{
     background-color: var(--primary-clr);
     padding-block: .5em;
     font-family: smoothy, sans-serif;
-    position: relative;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 99999;
     width: 100%;
+    box-shadow: 0 3px 5px hsla(216, 12%, 25%, 0.3);
 }
 .hero-nav{
     background-color: hsla(0, 0%, 0%, 0.4);
+}
+.fixed-header{
+    position: fixed;
 }
 .logo{
     height: 100px;
@@ -130,8 +134,8 @@ nav{
 .cta-btn{
     background-color: var(--green);
     color: var(--black);
-    padding: .2em .8em;
-    border-radius: 10px;
+    padding: .1em .6em;
+    border-radius: 5px;
 }
 .burger {
     all: unset;
