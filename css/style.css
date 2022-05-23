@@ -57,6 +57,9 @@ main{
 .flex-ai-fe{
     align-items: flex-end;
 }
+.gap-100{
+    gap: 1rem;
+}
 .gap-200{
     gap: 2rem;
 }
@@ -83,11 +86,7 @@ header{
 .logo{
     height: 100px;
 }
-nav{
-    gap: 2rem;
-}
 .primary-nav{
-    gap: 1rem;
     list-style: none;
     position: absolute;
     left: 0;
@@ -98,7 +97,7 @@ nav{
     display: none;
 }
 .primary-nav > li {
-    padding-block: .4em;
+    padding: .4em .6em;
     text-align: center;
 }
 .link{
@@ -109,13 +108,19 @@ nav{
 .link:hover{
     text-decoration: underline;
 }
-.dropdown-link{
+.dropdown{
     position: relative;
 }
-.dropdown-link:hover .dropdown{
+.dropdown:hover{
+    background-color: var(--secondary-clr);
+}
+.dropdown:hover a{
+    color: var(--primary-clr);
+}
+.dropdown:hover .dropdown-menu{
     display: block;
 }
-.dropdown{
+.dropdown-menu{
     position: absolute;
     display: none;
     list-style: none;
@@ -124,11 +129,12 @@ nav{
     background-color: var(--secondary-clr);
     padding: .4em .8em;
     z-index: 20;
+    min-width: 100%;
 }
-.dropdown li{
+.dropdown-menu li{
     white-space: nowrap;
 }
-.dropdown li a{
+.dropdown-menu li a{
     color: var(--primary-clr)
 }
 .cta-btn{
@@ -200,6 +206,19 @@ nav{
 /* FOOTER START */
 footer{
     min-height: 100px;
+    padding-block: 1rem 2rem;
     background-color: var(--secondary-clr);
+}
+footer .socials a:hover svg,
+footer .socials a:focus svg,
+footer .socials a:focus-visible svg {
+    transform: scale(1.1);
+}
+footer .socials svg {
+    width: 50px;
+    fill: var(--primary-clr);
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 150ms;
 }
 /* FOOTER END */

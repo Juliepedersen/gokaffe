@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/leverandor.css">
     <link rel="stylesheet" href="https://use.typekit.net/fjg3mzm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
     <script defer src="js/burger.js"></script>
     <title>Leverandører - Go' Kaffe</title>
 </head>
@@ -16,23 +24,23 @@
             <button class="burger" aria-controls="navigation" aria-label="navigation-button" aria-expanded="false">
                 <span class="inner-burger"></span>
             </button>
-            <nav class="flex-mobile flex-ai-c">
-                <a class="link" href="index.html">
-                    <img class="logo" src="assets/img/logo2.svg" alt="">
+            <nav class="flex-mobile flex-ai-c gap-200">
+                <a class="link" href="index.html" aria-label="hjem knap">
+                    <img class="logo" src="assets/img/logo2.svg" alt="Go' Kaffes logo">
                 </a>
-                <ul class="primary-nav flex-mobile" data-visible="false">
+                <ul class="primary-nav flex-mobile gap-200" data-visible="false">
                     <li><a class="link" href="">Vores Menu</a></li>
-                    <li class="dropdown-link">
+                    <li class="dropdown">
                         <a class="link" href="">Om Go' Kaffe</a>
-                        <ul class="dropdown">
+                        <ul class="dropdown-menu">
                             <li><a class="link" href="om.html">Hvem er vi?</a></li>
-                            <li><a class="link" href="">Leverandører</a></li>
+                            <li><a class="link" href="leverandor.html">Leverandører</a></li>
                             <li><a class="link" href="">SwapCup</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown-link">
+                    <li class="dropdown">
                         <a class="link" href="">Events</a>
-                        <ul class="dropdown">
+                        <ul class="dropdown-menu">
                             <li><a class="link" href="">Markedsdage</a></li>
                             <li><a class="link" href="">Go' Kaffe på hjul</a></li>
                         </ul>
