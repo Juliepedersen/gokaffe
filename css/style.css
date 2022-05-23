@@ -97,8 +97,6 @@ header{
 }
 .primary-nav > li {
     text-align: center;
-}
-.primary-nav > li a {
     padding: .4em .6em;
 }
 .link{
@@ -111,7 +109,6 @@ header{
 }
 .dropdown{
     position: relative;
-    padding-right: 20px;
 }
 .dropdown:hover{
     background-color: var(--secondary-clr);
@@ -122,17 +119,14 @@ header{
 .dropdown:hover .dropdown-menu{
     display: block;
 }
-.dropdown::after{
-    content: "";
-    position: absolute;
-    background-image: url(../assets/img/Chevron-down-45b.svg);
-    background-repeat: no-repeat;
-    z-index: 20;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    aspect-ratio: 2/1;
+.dropdown:hover .dropdown-icon svg{
+    fill: var(--primary-clr);
+}
+.dropdown-icon{
+    display: inline-block;
+}
+.dropdown-icon svg{
+    fill: var(--secondary-clr);
 }
 .dropdown-menu{
     position: absolute;
