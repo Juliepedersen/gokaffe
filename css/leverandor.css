@@ -23,6 +23,10 @@
     background-color: white;
 }
 
+p {
+    font-size: 20px;
+}
+
 /* billeder */
 .smaakager {
     max-width: 45%;
@@ -34,4 +38,58 @@
 
 .beans {
     max-width: 45%;
+}
+
+.bannerbillede {
+    max-height: 100%;
+    position: relative;
+}
+
+
+
+.banner{
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    height: auto;
+    max-height: 100vh;
+}
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,);
+    z-index: 15;
+}
+
+
+
+@keyframes bounce {
+    0%{
+        transform: translateX(-50%) translateY(0);
+    }
+    50%{
+        transform: translateX(-50%) translateY(-50%);
+    }
+    100%{
+        transform: translateX(-50%) translateY(0);
+    }
+}
+@media screen and (min-width: 600px) {
+    .banner {
+        content: "";
+        position: absolute;
+        background-image: url(../assets/img/Chevron-down-45b.svg);
+        background-repeat: no-repeat;
+        z-index: 20;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        aspect-ratio: 2/1;
+        animation-name: bounce;
+        animation-duration: 2500ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }   
 }
