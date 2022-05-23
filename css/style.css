@@ -1,5 +1,4 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 :root{
     --primary-clr: hsl(44, 29%, 90%);
@@ -97,8 +96,10 @@ header{
     display: none;
 }
 .primary-nav > li {
-    padding: .4em .6em;
     text-align: center;
+}
+.primary-nav > li a {
+    padding: .4em .6em;
 }
 .link{
     font-size: 1.8rem;
@@ -110,6 +111,7 @@ header{
 }
 .dropdown{
     position: relative;
+    padding-right: 20px;
 }
 .dropdown:hover{
     background-color: var(--secondary-clr);
@@ -119,6 +121,18 @@ header{
 }
 .dropdown:hover .dropdown-menu{
     display: block;
+}
+.dropdown::after{
+    content: "";
+    position: absolute;
+    background-image: url(../assets/img/Chevron-down-45b.svg);
+    background-repeat: no-repeat;
+    z-index: 20;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    aspect-ratio: 2/1;
 }
 .dropdown-menu{
     position: absolute;
@@ -157,7 +171,7 @@ header{
     display: block;
     width: 36px;
     height: 4px;
-    background-color: #000;
+    background-color: var(--secondary-clr);
     transition: transform 100ms ease-in-out;
 }
 .inner-burger {
