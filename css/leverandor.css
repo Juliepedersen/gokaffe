@@ -15,12 +15,21 @@
 
 .holybean {
     height: 600px;
-    background-color: #ede9de
+    background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
 }
 
 .smaakageriet {
     height: 600px;
-    background-color: white;
+    background-color: #fff;
+}
+
+.layer {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 p {
@@ -44,6 +53,8 @@ p {
     max-height: 100%;
     position: relative;
 }
+
+
 
 
 
