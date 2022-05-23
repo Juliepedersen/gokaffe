@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/leverandor.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://use.typekit.net/fjg3mzm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
     <script defer src="js/burger.js"></script>
-    <title>Leverandører - Go' Kaffe</title>
+    <title>Forside - Go' Kaffe</title>
+    <meta name="description" content="Go' Kaffe er en af Aarhus hygligste steder af komme forbi og få en kop kaffe">
 </head>
 <body class="body">
-    <header>
+    <header class="hero-nav fixed-header">
         <div class="wrapper flex flex-jc-sb flex-ai-c">
             <button class="burger" aria-controls="navigation" aria-label="navigation-button" aria-expanded="false">
                 <span class="inner-burger"></span>
@@ -50,56 +52,8 @@
             <a class="link cta-btn" href="login.html">Login</a>
         </div>
     </header>
-    <main id="leverandor">
-        <div class="banner">
-        </div>
-        <img class="bannerbillede" src="assets/img/leverandorbanner1.webp" alt="leverandorer banner">
-        <div class="schweizerbageriet">
-            <h2>Schweizerbageriet</h2>
-            <div class="flex gap-200 wrapper">
-                <img class="broed" src="assets/img/broed.webp" alt="kernebrød fra Schweizerbageriet">
-                <p>Hos Go' Kaffe får vi hver morgen leveret friskbagt brød fra Schweizerbageriet, der har byens største udvalg af brød, bagt i eget bageri i Bruuns Gade. 
-                   Deres team af passionerede og dygtige håndværkere sætter en ære i altid at kunne tilbyde brød af allerhøjeste kvalitet.
-                Alle specialbrødene er langtidshævede og bagt i italienske stenovne. Hos Go' Kaffe kan vi altid byde på deres friske croissanter, med og uden chokolade, friske boller, kardemommesnurre og hele brød.
-                
-                    <br>
-                    <br>
-                    Besøg Schweizerbageriets hjemmeside <a href="https://schweizerbageriet.dk/" target="_blank">her</a> for at læse mere.
-                </p>
-            </div>
-        </div>
-        <div class="holybean">
-            <h2>Holy Bean</h2>
-            <div class="flex gap-200 wrapper">
-                <p>Vores kaffebønner kommer fra brandet Holy Bean, der kun bruger 100% naturlige råvarer. 
-                    
-                    Vi bruger espresso blend Tommelise, som er sammensat af kaffe fra Brasilien og Colombia. Kaffen fra Brasilien bidrager især med fylde og sødme, mens kaffen fra Colombia tilføjer syrlighed og frugtige noter.
-                    
-                     Deres kaffer er ristede af deres certificerede rister Sine Klejs Gren og sammen med os deler hun passionen for kaffe og lysten til at gå på opdagelse i kaffens komplekse univers.
-                    
-                    Kaffebønnerne til dette blend er af kvaliteten premium. Premium er en forholdsvis høj kvalitet, når vi snakker kaffe. Den ligger over almindelige standard som vi kender fra supermarkeder og under speciality som vi kender fra kaffebarer.
-                    
-                    <br>
-                    <br>
-                    Besøg Holy Beans hjemmeside <a href="https://holybean.dk/" target="_blank">her</a> for at læse mere.
-                </p>
-               
-                <img class="beans" src="assets/img/HolyBeanClose.webp" alt="holy beans kaffebønner">
-            </div>
-        </div>
-        <div class="smaakageriet">
-            <h2>Småkageriet</h2>
-            <div class="flex gap-200 wrapper">
-                <img class="smaakager" src="assets/img/Smaakageriet.webp" alt="smaakageriet produkter">
-                <p> Vi hos Go' Kaffe er stolte af at være forhandlere af Småkageriets lækre fristelser.
-                    Hos Småkageriet bager De de dejligste, sprøde luksussmåkager. Udsøgte lækkerier, som smager af det, de indeholder – og indeholder det, de smager af. Kvalitet i sin reneste form. Intet andet. Gode, rene råvarer og masser af ægte smør.
-                    De er et mindre bageri med eksklusive småkager i ovnen. Selvom mange af opskrifterne er gået i arv gennem generationer, eksperimenterer de også med nye smagssammensætninger, leger med ingredienser og lader sig inspirere af tidens trends.
-                    <br>
-                    <br>
-                    Besøg Småkageriets hjemmeside <a href="https://smaakageriet.dk/" target="_blank">her</a> for at læse mere.
-                </p>
-            </div>
-        </div>
+    <main id="menu">
+
     </main>
     <footer>
         <div class="wrapper flex-mobile flex-jc-c gap-200">
@@ -131,5 +85,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/headerObserver.js"></script>
 </body>
 </html>
