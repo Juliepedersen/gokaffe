@@ -14,9 +14,7 @@
     min-width: 16rem;
 }
 
-/* Typografi */
-
-#om h1{
+#gohjul h1{
     font-family: smoothy, sans-serif; 
     font-weight: 400;
     font-style: normal;
@@ -28,33 +26,22 @@
 }
 
 h3{
-    font-family:  smoothy, sans-serif;
-    font-weight: 300;
+    font-family: 'Oxygen', sans-serif; 
+    font-weight: 400;
     font-style: normal;
-    font-size: 40px;
-    margin-top: 10px;
+    font-size: 30px;
+    padding: 20px;
     margin: block;
-    color: var(--secondary-clr);
    
 }
 
-.location{
-    font-family:  smoothy, sans-serif;
-    color: var(--secondary-clr);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    margin: block;  
-    color: white;
-}
-
 .underskrift{
-    font-family: smoothy, sans-serif; 
+    font-family: 'Oxygen', sans-serif; 
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
+    padding: 20px;
     margin: block;
-    margin-top: 10px;
 }
 
 .text{
@@ -70,13 +57,6 @@ h3{
     font-family: 'Oxygen', sans-serif; 
     line-height: 2rem;
     font-size: 20px;
-}
-
-.text3{
-    font-family: 'Oxygen', sans-serif; 
-    line-height: 2rem;
-    font-size: 20px;
-    color: white;
 }
 
 .bannerbillede{
@@ -103,47 +83,22 @@ h3{
     height: 100vh;
 }
 
-/* Billeder */
-
 .underimg{
     box-shadow: 0 0 2px #000;
     min-width: 45%;
     margin-top: 75px;
 }
 
+
+
 .vogn{
     min-height: 600px;   
     background-color: white;
 }
-
-.lokation{
-    min-height: 500px;   
-    background-color: #80A290;
-}
-
 .udlev{
     min-height: 600px;
     background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
 }
-
-/* Map */
-
-.mapouter{
-    min-width: 45%;
-    margin-top: 75px;
-    position:relative;
-    text-align:right;
-    height:350px;
-    width:600px;
-}
-
-.gmapcanvas{
-    overflow:hidden;
-    background:none!important;
-    height:350px;
-    width:600px;
-}
-
 
 
 
@@ -175,5 +130,6 @@ h3{
         animation-duration: 2500ms;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
+        
     }   
 }
