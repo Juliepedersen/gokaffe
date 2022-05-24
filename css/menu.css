@@ -1,9 +1,13 @@
 .menubilleder {
-    max-width: 40%;
+    max-width: 30%;
+    display: inline-block;
+
 }
 
 .card {
     display: inline-block;
+    padding: 5px;
+    align-items: center;
   }
 
 .scrolling-wrapper {
