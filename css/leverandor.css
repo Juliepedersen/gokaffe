@@ -25,12 +25,15 @@ p {
 }
 /* billeder */
 .broed {
+    box-shadow: 0 0 2px #000;
     min-width: 45%;
 }
 .beans {
+    box-shadow: 0 0 2px #000;
     min-width: 45%;
 }
 .smaakager {
+    box-shadow: 0 0 2px #000;
     min-width: 45%;
 }
 .bannerbillede {
