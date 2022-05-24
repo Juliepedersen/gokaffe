@@ -31,9 +31,10 @@ h3{
     font-family:  smoothy, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 40px;
+    margin-top: 10px;
     margin: block;
+    color: var(--secondary-clr);
    
 }
 
@@ -50,9 +51,9 @@ h3{
     font-family: smoothy, sans-serif; 
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 40px;
     margin: block;
+    margin-top: 10px;
 }
 
 .text{
@@ -104,7 +105,7 @@ h3{
 
 .vogn{
     min-height: 600px;   
-    background-color: var(--primary-clr)
+    background-color: white;
 }
 .udlev{
     min-height: 600px;
