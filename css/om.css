@@ -104,7 +104,7 @@ h3{
 
 .vogn{
     min-height: 600px;   
-    background-color: white;
+    background-color: var(--primary-clr)
 }
 .udlev{
     min-height: 600px;
