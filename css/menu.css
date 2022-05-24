@@ -1,5 +1,5 @@
 #menu {
-    background-color: #80A290;
+    background-color:#80A290;
 }
 
 .menubilleder {
@@ -9,6 +9,6 @@
 
 .card {
     padding: 15px;
-    
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
   }
-
