@@ -17,7 +17,7 @@ main{
 }
 /* GLOBAL CLASSES START*/
 .wrapper{
-    width: clamp(16rem, 90vw, 90rem);
+    width: clamp(16rem, 90vw, 85rem);
     margin-inline: auto;
     padding-inline: 1rem;
 }
@@ -55,6 +55,9 @@ main{
 }
 .flex-ai-fe{
     align-items: flex-end;
+}
+.flex-wrap{
+    flex-wrap: wrap;
 }
 .gap-100{
     gap: 1rem;
