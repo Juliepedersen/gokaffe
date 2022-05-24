@@ -33,15 +33,88 @@ h1{
     max-width: 66ch;
     font-size: 1.3rem;
 }
+section:first-of-type{
+    margin-top: 2rem;
+}
 section{
-    margin-block: 2rem;
+    margin-bottom: 4rem;
 }
 section img{
     box-shadow: 0 0 2px #000;
 }
+.season h2{
+    font-family: smoothy, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.season h3{
+    margin-bottom: 1rem;
+}
+.season p{
+    max-width: 40ch;
+    font-size: 1.2rem;
+}
 .big-section{
     height: 100vh;
 }
+
+.instafeed{
+    width: 600px;
+    position: relative;
+}
+.image-list{
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+.image-list img{
+    width: 600px;
+}
+.image-list img:nth-of-type(2){
+    position: absolute;
+    right: -120px;
+    top: 0;
+    width: 100px;
+}
+.image-list img:nth-of-type(3){
+    position: absolute;
+    right: -120px;
+    top: 120px;
+    width: 100px;
+}
+.image-list img:nth-of-type(4){
+    position: absolute;
+    right: -120px;
+    top: 240px;
+    width: 100px;
+}
+#prev-image,
+#next-image{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: hsla(0, 0%, 0%, 0.1);
+    height: 20%;
+}
+#prev-image:hover,
+#next-image:hover{
+    background-color: hsla(0, 0%, 0%, 0.3)
+}
+#prev-image{
+    left: 0;
+}
+#next-image{
+    right:0;
+}
+#prev-image svg{
+    transform: rotateZ(90deg);
+}
+#next-image svg{
+    transform: rotateZ(-90deg);
+}
+
 @keyframes bounce {
     0%{
         transform: translateX(-50%) translateY(0);
