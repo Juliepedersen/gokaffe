@@ -51,6 +51,10 @@
     z-index: 15;
 }
 
+section img{
+    box-shadow: 0 0 2px #000;
+}
+
 @keyframes bounce {
     0%{
         transform: translateX(-50%) translateY(0);
