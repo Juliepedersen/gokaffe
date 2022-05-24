@@ -20,18 +20,23 @@
     font-style: normal;
     font-size: 60px;
     color: var(--secondary-clr);
-    padding-left: 30rem;
+    text-align: center;
     background-color: var(--primary-clr);
+    padding-top: 5rem;
 }
 
 .text{
     text-align: center;
     font-family: 'Oxygen', sans-serif; 
-    background-color: var(--primary-clr); 
     max-width: 66ch;
     font-size: 1.3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
    
+}
+
+.text2{
+    font-family: 'Oxygen', sans-serif; 
+    line-height: 2rem;
 }
 
 .bannerbillede{
@@ -63,14 +68,7 @@
     
 }
 
-.wrapper{
-    width: clamp(16rem, 90vw, 90rem);
-    margin-inline: auto;
-    padding-inline: 1rem;
-}
-.flex{
-    display: flex;
-}
+
 
 @keyframes bounce {
     0%{
