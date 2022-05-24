@@ -14,9 +14,7 @@
     min-width: 16rem;
 }
 
-/* Typografi */
-
-#om h1{
+#gohjul h1{
     font-family: smoothy, sans-serif; 
     font-weight: 400;
     font-style: normal;
@@ -28,8 +26,8 @@
 }
 
 h3{
-    font-family:  smoothy, sans-serif;
-    font-weight: 300;
+    font-family: 'Oxygen', sans-serif; 
+    font-weight: 400;
     font-style: normal;
     font-size: 30px;
     padding: 20px;
@@ -37,17 +35,8 @@ h3{
    
 }
 
-.location{
-    font-family:  smoothy, sans-serif;
-    color: var(--secondary-clr);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    margin: block;  
-}
-
 .underskrift{
-    font-family: smoothy, sans-serif; 
+    font-family: 'Oxygen', sans-serif; 
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
@@ -94,8 +83,6 @@ h3{
     height: 100vh;
 }
 
-/* Billeder */
-
 .underimg{
     box-shadow: 0 0 2px #000;
     min-width: 45%;
@@ -111,23 +98,7 @@ h3{
     background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
 }
 
-/* Map */
 
-.mapouter{
-    min-width: 45%;
-    margin-top: 75px;
-    position:relative;
-    text-align:right;
-    height:350px;
-    width:600px;
-}
-
-.gmapcanvas{
-    overflow:hidden;
-    background:none!important;
-    height:350px;
-    width:600px;
-}
 
 
 
