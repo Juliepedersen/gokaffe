@@ -45,6 +45,7 @@ h3{
     font-style: normal;
     font-size: 50px;
     margin: block;  
+    color: white;
 }
 
 .underskrift{
@@ -69,6 +70,13 @@ h3{
     font-family: 'Oxygen', sans-serif; 
     line-height: 2rem;
     font-size: 20px;
+}
+
+.text3{
+    font-family: 'Oxygen', sans-serif; 
+    line-height: 2rem;
+    font-size: 20px;
+    color: white;
 }
 
 .bannerbillede{
@@ -107,6 +115,12 @@ h3{
     min-height: 600px;   
     background-color: white;
 }
+
+.lokation{
+    min-height: 500px;   
+    background-color: #80A290;
+}
+
 .udlev{
     min-height: 600px;
     background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
