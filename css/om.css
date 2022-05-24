@@ -63,6 +63,15 @@
     
 }
 
+.wrapper{
+    width: clamp(16rem, 90vw, 90rem);
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+.flex{
+    display: flex;
+}
+
 @keyframes bounce {
     0%{
         transform: translateX(-50%) translateY(0);
