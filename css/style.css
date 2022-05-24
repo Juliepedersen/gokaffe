@@ -15,6 +15,7 @@
 main{
     background-color: var(--primary-clr);
 }
+
 /* GLOBAL CLASSES START*/
 .wrapper{
     width: clamp(16rem, 90vw, 85rem);
