@@ -15,6 +15,11 @@ a {
 
 .steptext {
     padding: 5px;
+    font-size: 20px;
+}
+
+.leverandtext {
+    font-size: 20px;
 }
 
 .swapcuphowto {
@@ -36,9 +41,6 @@ a {
     height: 100%;
 }
 
-p {
-    font-size: 20px;
-}
 
 /* billeder */
 .broed {
