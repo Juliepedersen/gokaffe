@@ -58,7 +58,7 @@ section img{
     font-size: 1.2rem;
 }
 .seasons-brown {
-    min-height: 600px;
+    min-height: 400px;
     background: url("../assets/img/flowertext.png") no-repeat, #796261;
 }
 
@@ -66,12 +66,17 @@ section img{
     color: white;
     font-family: smoothy, sans-serif;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.seasons-brown p {
+    color: white;
 }
 
 .saesonbilledercircle {
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .big-section{
