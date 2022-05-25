@@ -79,6 +79,14 @@ section img{
     max-width: 60%;
 }
 
+.openinghours {
+    max-width: 60%;
+    margin: 20px;
+}
+
+
+
+
 .big-section{
     height: 100vh;
 }
