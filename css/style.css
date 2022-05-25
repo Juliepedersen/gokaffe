@@ -95,7 +95,7 @@ header{
     position: fixed;
 }
 .logo{
-    padding-block: 1rem 2rem;
+    padding-block: .5rem;
 }
 .logo svg{
     fill: var(--secondary-clr);
@@ -116,10 +116,6 @@ header{
 .primary-nav > li {
     text-align: center;
     padding: .4em .6em;
-}
-.nytest .primary-nav > li,
-.nytest .cta-btn{
-    margin-top: 2rem;
 }
 .link{
     font-size: 1.8rem;
