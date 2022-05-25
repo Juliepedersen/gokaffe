@@ -1,28 +1,43 @@
-let currentIndex = 0;
-const prev = document.querySelector("#prev-image")
-const next = document.querySelector("#next-image")
-const images = document.querySelector(".image-list")
-const slide = document.querySelectorAll("[data-index]")
+const state = {};
+const carouselList = document.querySelector('.carousel__list');
+const carouselItems = document.querySelectorAll('.carousel__item');
+const elems = Array.from(carouselItems);
 
-prev.addEventListener("click", () => {
-    currentIndex--
-    if(currentIndex < 0) {
-        currentIndex = images.children.length - 1
-    }
-    // console.log(images.children[currentIndex])
-    for(let i = 0; i < images.children.length; i++){
-        console.log(images.children[i+1])
-    }
-    console.log(currentIndex)
-})
-next.addEventListener("click", () => {
-    if(currentIndex >= images.children.length) {
-        currentIndex = 0
-    }
-    for(let i = 0; i < images.children.length; i++){
-        images.children[i].setAttribute("data-index", `${i + 1}`)
-        console.log(images.children[i])
-    }
-    currentIndex++
-    // console.log(currentIndex)
-})
+carouselList.addEventListener('click', function (event) {
+  var newActive = event.target;
+  var isItem = newActive.closest('.carousel__item');
+
+  if (!isItem || newActive.classList.contains('carousel__item_active')) {
+    return;
+  };
+  
+  update(newActive);
+});
+
+const update = function(newActive) {
+  const newActivePos = newActive.dataset.pos;
+
+  const current = elems.find((elem) => elem.dataset.pos == 0);
+  const prev = elems.find((elem) => elem.dataset.pos == -1);
+  const next = elems.find((elem) => elem.dataset.pos == 1);
+  const first = elems.find((elem) => elem.dataset.pos == -2);
+  const last = elems.find((elem) => elem.dataset.pos == 2);
+  
+  current.classList.remove('carousel__item_active');
+  
+  [current, prev, next, first, last].forEach(item => {
+    var itemPos = item.dataset.pos;
+
+    item.dataset.pos = getPos(itemPos, newActivePos)
+  });
+};
+
+const getPos = function (current, active) {
+  const diff = current - active;
+
+  if (Math.abs(current - active) > 2) {
+    return -current
+  }
+
+  return diff;
+}

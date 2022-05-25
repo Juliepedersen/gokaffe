@@ -83,11 +83,25 @@ header{
 .hero-nav{
     background-color: hsla(0, 0%, 0%, 0.4);
 }
+.hero-nav .logo svg,
+.hero-nav .dropdown-icon svg{
+    fill: var(--primary-clr);
+}
+.hero-nav .link,
+.hero-nav .dropdown-btn{
+    color: var(--primary-clr);
+}
 .fixed-header{
     position: fixed;
 }
 .logo{
-    height: 100px;
+    padding-block: 1rem 2rem;
+}
+.logo svg{
+    fill: var(--secondary-clr);
+}
+.logo-img{
+    height: 120px;
 }
 .primary-nav{
     list-style: none;
@@ -102,6 +116,10 @@ header{
 .primary-nav > li {
     text-align: center;
     padding: .4em .6em;
+}
+.nytest .primary-nav > li,
+.nytest .cta-btn{
+    margin-top: 2rem;
 }
 .link{
     font-size: 1.8rem;
@@ -160,7 +178,7 @@ header{
     color: var(--primary-clr)
 }
 .cta-btn{
-    background-color: var(--green);
+    background: linear-gradient(hsl(145, 15%, 60%), hsl(145, 15%, 55%));
     color: var(--black);
     padding: .1em .6em;
     border-radius: 5px;
