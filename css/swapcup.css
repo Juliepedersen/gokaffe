@@ -1,4 +1,4 @@
-#swapcup h2{
+.overskrift{
         font-family: smoothy, sans-serif; 
         font-weight: 400;
         font-style: normal;
@@ -7,20 +7,24 @@
         text-align: center;
         padding: 20px;
     }
-    
-    .schweizerbageriet {
-        height: 600px;
+
+    a {
+        text-decoration: none;
+        color:#80A290; 
+    }
+
+    .steptext {
+        padding: 5px;
+    }
+
+    .swapcuphowto {
+        height: 500px;
         background-color: white;
     }
     
-    .holybean {
+    .swapcupintro {
         height: 600px;
         background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
-    }
-    
-    .smaakageriet {
-        height: 600px;
-        background-color: #fff;
     }
     
     .layer {
@@ -37,16 +41,22 @@
     }
     
     /* billeder */
-    .smaakager {
+    .broed {
+        box-shadow: 0 0 2px #000;
         max-width: 45%;
     }
-    
-    .broed {
-        max-width: 45%;
+
+    .stepbystep {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+        
     }
     
     .beans {
-        max-width: 45%;
+        min-height: 100%;
+        margin: auto;
     }
     
     .bannerbillede  {
