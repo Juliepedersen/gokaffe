@@ -57,12 +57,12 @@ section img{
     max-width: 40ch;
     font-size: 1.2rem;
 }
-.seasons1 {
-height: 600px;
-background: url("../assets/img/flowertext.png") no-repeat, #796261;
+.seasons-brown {
+    min-height: 600px;
+    background: url("../assets/img/flowertext.png") no-repeat, #796261;
 }
 
-.seasons1 h2 {
+.seasons-brown h2 {
     color: white;
     font-family: smoothy, sans-serif;
     font-weight: 400;
