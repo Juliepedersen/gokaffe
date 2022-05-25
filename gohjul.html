@@ -9,14 +9,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/om.css">
+    <link rel="stylesheet" href="css/gohjul.css">
     <link rel="stylesheet" href="https://use.typekit.net/fjg3mzm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     
     <script defer src="js/om.js"></script>
-    <title>Kaffe på hjul - Go' Kaffe</title>
+    <title>Go' Kaffe på Hjul - Go' Kaffe</title>
 </head>
 <body class="body">
     <header>
@@ -58,26 +58,69 @@
             <a class="link cta-btn" href="login.html">Login</a>
         </div>
     </header>
-    <main id="gohjul">
+    <main id="om">
         <div class="banner"></div>
-         <img class="bannerbillede" src="assets/img/gokafhjulbil.webp" alt="En kop kaffelatte">
-          
-          <div class="vogn">
+        <img class="bannerbillede" src="assets/img/gokafhjulbil.webp" alt="rød kaffetruck">
+        <section class="wrapper flexc flex-ai-c">
+            <h1>Få Go' Kaffe til dit næste arrangement</h1>
+            <div class="flex-mobile gap-200 wrapper"></div>
+            <p class="text">Står du og mangler en kvalitetsgimmick til dit næste arrangement? Så står vi klar med vores Go' Kaffe på Hjul.
+                På bagladet af vores røde kaffetruck har vi installeret en lækker espressomaskine så vi kan lange frisk kaffe over ladet til enhver lejlighed. 
+            </p>  
+        </section> 
+        <div class="vogn">
             <div class="flex-mobile gap-200 wrapper">
-                <img class="underimg" src="assets/img/Kaffetruck1.webp" alt="Go' Kaffes kaffevogn">
-                <div>
-                    <h3>Få friskbrygget kaffe til dit næste arrangement</h3>
-                    <p class="text">
-                        Mangler du en fed gimmick til din fest og elsker du en god kop kaffe?
-                        Så book Go' Kaffes røde Kaffetruck! Vi kører ud til dine livsbegivenheder og 
-                        skænker dig og dine gæster en smagsfuld friskbrygget kop kaffe, serveret direkte fra den røde Kaffetruck.
+                <div><img class="underimg" src="assets/img/kaffetruck2.jpg" alt="Go' Kaffe Truck"></div>
+                <div class="flex-mobile gap-200 wrapper">
+                    <div>
+                    <h3 class="bring">Vi bringer - du drikker</h3>
+                    <p class="text2">
+                        Go' Kaffes eksistens havde sin oprindelse for 17 år siden, da indehaver fik sig en trailer, ombygget til en lille kaffebar. Hver onsdag og lørdag i 10 år kørte han sin kaffetrailer ind på Ingerslev Torv, til torvedagene, 
+                        hvor han kunne glæde de besøgende med en god kop kaffe. Traileren var så stor en succes, at efter 10 års torvesalg fik han blod på tanden. Samtidig kom den lille pølsevogn til salg, som længe havde ligget oppe for enden af torvet - og så slog han til.
+                        I dag huser den gamle pølsevogn nu Go' Kaffe, som i 2020 blev kåret til Byens Bedste Kaffe.
+                        </p>
+                        <br>
+                        <p class="text2">
+                        Siden 2015 har Go' Kaffe været et fast vendepunkt for mange Aarhusianere i deres dagligdag. Vi laver kaffe og sælger bagværk til store og små, unge som ældre.
+                        Hos os er konceptet skabt af vores loyale kunder, hvor vi holder fast i ideen om kvalitetskaffe til fornuftige penge. Vi lægger vægt på at være konsekvente i smag og kvalitet, så kunderne kan forvente den samme velkendte smag af Go' Kaffe for hvert besøg.
                     </p>
                 </div>
+                    </div>
             </div>
         </div>
-        
-          
-     
+        <div class="lokation">
+            <div class="flex-mobile gap-200 wrapper">
+                <div>
+                    <h3 class="location">Book Go' Kaffe på Hjul</h3>
+                    <p class="textform">
+                        Er du interesseret i at få Go' Kaffe på Hjul til dit næste arrangement?
+                        Vil du høre mere om hvad vi kan tilbyde til netop dit arrangement, så udfyld formularen til højre med dine informationer, og en kort beskrivelse over dit event. Inkluder gerne ca. dato samt antal personer.
+                    </p>
+                    <br>
+                    <p class="textform">
+                Du kan forvente at vi vender tilbage enten pr. mail eller telefon. Hvis du har preferencer er du velkommen til at skrive dem i kommentarfeltet. Vi glæder os til at høre fra dig!
+            </p>    
+            </div>
+            <div class="formulardiv">
+                <div class="formular">
+                    <form action="/action_page.php">
+                      <label for="fname">Navn</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn..">
+                  
+                      <label for="lname">E-mail</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Din e-mail..">
+
+                      <label for="lname">Telefon</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Dit telefonnummer..">
+
+                      <label class="kommentar" for="lname">Kommentar</label>
+                      <textarea>Skriv din forespørgsel her...</textarea>
+                    
+                      <input type="submit" value="Indsend">
+                    </form>
+                  </div>
+                </div>
+                    
     </main>
     <footer>
         <div class="wrapper flex-mobile flex-jc-sb flex-wrap gap-200">
@@ -85,7 +128,11 @@
                 <h2>Kontakt os</h2>
                 <p>Fang os på telefonen: <a class="footer-link" href="tel:">12345678</a></p>
                 <p>Send os mail til: <a class="footer-link" href="mailto:">virksomhedsmail@mail.dk</a></p>
+<<<<<<< HEAD
                 <p>Adresse: <a class="footer-link" href="https://rb.gy/em5qt2" target="_blank" >Ingerslev Boulevard 2A, 8000 Aarhus</a></p>
+=======
+                
+>>>>>>> 9ac3e3db8c79c9a8c80cbba519f4da7f0f913a66
             </div>
             <div>
                 <h2>Åbningstider</h2>
@@ -115,7 +162,7 @@
             </div>
         </div>
     </footer>
-    <svg aria-hidden="true" focusable="false">
+    <svg aria-hidden="true" focusable="false" hidden>
         <defs>
             <symbol id="icon-instagram" viewBox="0 0 24 24">
                 <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
@@ -128,7 +175,5 @@
             </symbol>
         </defs>
     </svg>
-    <script src="js/headerObserver.js"></script>
-    <script src="js/instagram.js"></script>
 </body>
 </html>
