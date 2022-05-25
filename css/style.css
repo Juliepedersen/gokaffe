@@ -186,6 +186,10 @@ header{
     color: var(--black);
     padding: .1em 1.2em;
     border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+}
+.cta-btn:hover{
+    background: linear-gradient(hsl(145, 15%, 65%), hsl(145, 15%, 60%));
 }
 .burger {
     all: unset;
