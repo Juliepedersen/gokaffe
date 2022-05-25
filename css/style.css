@@ -87,8 +87,9 @@ header{
 .hero-nav .dropdown-icon svg{
     fill: var(--primary-clr);
 }
-.hero-nav .link,
-.hero-nav .dropdown-btn{
+.hero-nav .link, 
+.hero-nav .dropdown-btn,
+.hero-nav .pil{
     color: var(--primary-clr);
 }
 .fixed-header{
@@ -180,11 +181,6 @@ header{
     display: block;
 }
 
-.pilforside{
-    font-size: 1.8rem;
-    color: white;
-    display: block;
-}
 .cta-btn{
     background: linear-gradient(hsl(145, 15%, 60%), hsl(145, 15%, 55%));
     color: var(--black);
