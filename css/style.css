@@ -100,6 +100,9 @@ header{
 .logo svg{
     fill: var(--secondary-clr);
 }
+.logo-img{
+    height: 120px;
+}
 .primary-nav{
     list-style: none;
     position: absolute;
@@ -113,6 +116,9 @@ header{
 .primary-nav > li {
     text-align: center;
     padding: .4em .6em;
+}
+.nytest .primary-nav > li,
+.nytest .cta-btn{
     margin-top: 2rem;
 }
 .link{
@@ -172,11 +178,10 @@ header{
     color: var(--primary-clr)
 }
 .cta-btn{
-    background: linear-gradient(hsl(145, 15%, 65%), hsl(145, 15%, 55%));
+    background: linear-gradient(hsl(145, 15%, 60%), hsl(145, 15%, 55%));
     color: var(--black);
     padding: .1em .6em;
     border-radius: 5px;
-    margin-top: 2rem;
 }
 .burger {
     all: unset;
