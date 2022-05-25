@@ -13,13 +13,6 @@
     grid-template-rows: auto 1fr auto;
     min-width: 16rem;
 }
-
-.pil{
-    font-size: 1.8rem;
-    color: var(--secondary-clr);
-    list-style: none;
-    float: right;
-}
 /* Typografi */
 
 #om h1{

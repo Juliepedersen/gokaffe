@@ -152,6 +152,7 @@ header{
 }
 .dropdown-icon{
     display: inline-block;
+    margin-bottom: 5px;
 }
 .dropdown-icon svg{
     fill: var(--secondary-clr);
@@ -172,6 +173,11 @@ header{
 }
 .dropdown-menu li a{
     color: var(--primary-clr)
+}
+.pil{
+    font-size: 1.8rem;
+    color: var(--secondary-clr);
+    display: block;
 }
 .cta-btn{
     background: linear-gradient(hsl(145, 15%, 60%), hsl(145, 15%, 55%));
