@@ -164,8 +164,22 @@ header{
     background-color: var(--secondary-clr);
     padding: .4em .8em;
     z-index: 20;
-    min-width: 100%;
+    min-width: 110%;
     border-radius: 5px;
+}
+.dropdown-menu .dropdown-btn{
+    position: relative;
+    margin-bottom: .5rem;
+}
+.dropdown-menu .dropdown-btn::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-55%);
+    background-color: #fff;
 }
 .dropdown-menu li{
     white-space: nowrap;
