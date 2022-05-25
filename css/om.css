@@ -17,7 +17,8 @@
 .pil{
     font-size: 1.8rem;
     color: var(--secondary-clr);
-    text-decoration: none;
+    list-style: none;
+    float: right;
 }
 /* Typografi */
 
