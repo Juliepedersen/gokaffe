@@ -14,7 +14,71 @@
     min-width: 16rem;
 }
 
-#gohjul h1{
+/*formular*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .kommentar input[type=text] {
+      padding: 10px;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: var(--green);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--secondary-clr);
+  }
+  
+  .formular {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+
+  .formulardiv {
+    padding: 20px;
+
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    color: grey;
+    resize: none;
+  }
+/* Typografi */
+
+
+.textform {
+    color: white;
+    font-size: 20px;
+    max-width: 80%;
+}
+
+#om h1{
     font-family: smoothy, sans-serif; 
     font-weight: 400;
     font-style: normal;
@@ -26,22 +90,38 @@
 }
 
 h3{
-    font-family: 'Oxygen', sans-serif; 
-    font-weight: 400;
+    font-family:  smoothy, sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 40px;
+    margin-top: 10px;
     margin: block;
+    color: var(--secondary-clr);
    
 }
 
-.underskrift{
-    font-family: 'Oxygen', sans-serif; 
+.location{
+    font-family:  smoothy, sans-serif;
+    color: var(--secondary-clr);
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 50px;
+    margin: block;  
+    color: white;
+}
+
+.bring {
+    font-size: 50px;
+}
+
+
+.underskrift{
+    font-family: smoothy, sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
     margin: block;
+    margin-top: 10px;
 }
 
 .text{
@@ -57,6 +137,13 @@ h3{
     font-family: 'Oxygen', sans-serif; 
     line-height: 2rem;
     font-size: 20px;
+}
+
+.text3{
+    font-family: 'Oxygen', sans-serif; 
+    line-height: 2rem;
+    font-size: 20px;
+    color: white;
 }
 
 .bannerbillede{
@@ -83,21 +170,23 @@ h3{
     height: 100vh;
 }
 
-.underimg{
+/* Billeder */
+
+.underimg {
     box-shadow: 0 0 2px #000;
-    min-width: 45%;
-    margin-top: 75px;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-
 
 .vogn{
     min-height: 600px;   
     background-color: white;
 }
-.udlev{
-    min-height: 600px;
-    background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
+
+.lokation{
+    min-height: 500px;   
+    background-color: #80A290;
 }
 
 
@@ -130,6 +219,5 @@ h3{
         animation-duration: 2500ms;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
-        
     }   
 }
