@@ -129,10 +129,6 @@ header{
 .dropdown{
     position: relative;
 }
-.dropdown:hover,
-.dropdown:focus-within{
-    background-color: var(--secondary-clr);
-}
 .dropdown:hover .dropdown-btn,
 .dropdown:focus-within .dropdown-btn{
     color: var(--primary-clr);
@@ -162,12 +158,14 @@ header{
     position: absolute;
     display: none;
     list-style: none;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--secondary-clr);
     padding: .4em .8em;
     z-index: 20;
     min-width: 100%;
+    border-radius: 5px;
 }
 .dropdown-menu li{
     white-space: nowrap;
