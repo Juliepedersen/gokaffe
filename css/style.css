@@ -182,7 +182,7 @@ header{
 .cta-btn{
     background: linear-gradient(hsl(145, 15%, 60%), hsl(145, 15%, 55%));
     color: var(--black);
-    padding: .1em .6em;
+    padding: .1em 1.2em;
     border-radius: 5px;
 }
 .burger {
