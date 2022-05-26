@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Error</title>
+    <link rel="stylesheet" href="css/error.css">
+</head>
+<body>
+    <main id="error">
+    <div id="box">
+        <div class="content"></div>
+          <h2>404</h2>
+            <h4 class="errortext2">Page not found</h4>
+            <p class="back"> Siden du prøvede at finde, er stadig undervejs. Tryk <a href="index.html">Her   
+            </a>for at komme hjem igen
+            </p> 
+    </div>
+</main>
+
+<script>
+    var box = document.getElementById('box');
+    window.onmousemove = function(e){
+        var x = - e.clientx/5;
+        var y = - e.clienty/5;
+
+        box.style.backgroundPositionX = x + 'px';
+        box.style.backgroundPositionY = y + 'px';
+    }
+</script>
+</body>
+</html>
