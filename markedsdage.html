@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-    <script src="js/login.js" defer></script>
-    <title>Login - Go' Kaffe</title>
+    <link rel="stylesheet" href="css/marked.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fjg3mzm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script defer src="js/burger.js"></script>
+    <title>Leverandører - Go' Kaffe</title>
 </head>
 <body class="body">
     <header>
@@ -58,23 +67,14 @@
                     </li>
                 </ul>
             </nav>
-            <a class="link cta-btn" href="login.html">Login</a>
+            <span class="pil">Bliv Go'Kunde ➯ <a class="link cta-btn" href="login.html">Login</a></span>
         </div>
     </header>
-    <main id="login-site" class="flex flex-center">
-        <form id="login-form">
-            <section>
-                <label for="username">Brugernavn</label>
-                <input type="text" id="username" required>
-                <span class="error-msg"></span>
-            </section>
-            <section>
-                <label for="password">Password</label>
-                <input type="password" id="password" required>
-                <span class="error-msg"></span>
-            </section>
-            <button>Login</button>
-        </form>
+    <main id="markedsdage">
+        <div class="banner">
+            <img src="assets/img/markedet.jpg" alt="">
+        </div>
+        <section></section>
     </main>
     <footer>
         <div class="wrapper flex-mobile flex-jc-sb flex-wrap gap-200">
@@ -141,6 +141,5 @@
             </symbol>
         </defs>
     </svg>
-    <script src="js/user.js"></script>
 </body>
 </html>
