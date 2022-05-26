@@ -84,7 +84,11 @@ section img{
     margin: 20px;
 }
 
-
+.openhourdiv {
+    min-height: 700px;
+    background-image: url(../assets/img/blomster.JPG);
+    background-position: center;
+}
 
 
 .big-section{
