@@ -137,12 +137,17 @@ section img{
 .openinghours {
     max-width: 50%;
     margin: 20px;
+    box-shadow: 0 0 2px #000;
+    
+
 }
 
 .openhourdiv {
     min-height: 700px;
-    background-image: url(../assets/img/blomster.JPG);
+    background-image: url(../assets/img/is.JPG);
     background-position: center;
+    
+
 }
 
 .infographic {
@@ -191,14 +196,14 @@ section img{
     position:relative;
     text-align:right;
     height:350px;
-    width:600px;
+    max-width: 100%;
 }
 
 .gmapcanvas{
     overflow:hidden;
     background:none!important;
     height:350px;
-    width:600px;
+    max-width: 100%;
 }
 
 
