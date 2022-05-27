@@ -17,48 +17,62 @@
     max-width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 10rem 10rem;
+    justify-content: space-around;
+
 }
 
-.heading {
-    position: absolute;
-    top: 200px;
-    left: 16rem;
+
+
+.torvecontent {
+    flex-basis: 33.33%;
+    min-width: 400px;
 }
 
-.txt {
-    margin-right: 14em;
-    margin-left: 5em;
+
+.torvecontent h2 {
+    
+    font-size: 30px;
+    line-height: 60px;
+    margin: 30px 0;
+}
+
+
+.torvecontent p {
     font-size: 20px;
 }
 
-.img2 {
-    padding: 12em;
-    height: 100%;
-    width: 100vh;
-    background-image: url('../assets/img/torvedag1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;   
+.torvecontent img{
+    max-width: 100%;
 }
 
-.kaffeimg {
+.torvedag2 {
+    margin: 0em;
+    padding: 0 10em 0 10em;
+    width: 100%;
+    height: 130vh;
     display: flex;
-    justify-content: center; 
-    padding: 6em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.kaffeimg img {
-    width: 50%;
-    height: 100%;
-    padding: 2em;
-    margin-right: 10em;
+.kaffecontent {
+    flex-basis: 33.33%;
+    min-width: 400px;
+}
+.kaffecontent h2 {
+    
+    font-size: 30px;
+    line-height: 60px;
+    margin: 30px 0;
+}
+.kaffecontent img {
+    max-width: 100%;
 }
 
-.kaffetext {
-    padding: 2em;
-    margin-right: 6em;
+.kaffecontent p {
+    font-size: 20px;
+
 }
