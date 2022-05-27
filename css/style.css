@@ -112,6 +112,12 @@ select {
 main{
     background-color: var(--primary-clr);
 }
+h1,
+h2,
+h3,
+h4{
+    font-family: smoothy, sans-serif;
+}
 
 /* GLOBAL CLASSES START*/
 
@@ -119,6 +125,9 @@ main{
     width: clamp(16rem, 90vw, 85rem);
     margin-inline: auto;
     padding-inline: 1rem;
+}
+.img-shadow{
+    box-shadow: 0 0 2px #000;
 }
 .flex{
     display: flex;
@@ -287,12 +296,6 @@ header{
 .dropdown-menu li a{
     color: var(--primary-clr)
 }
-.pil{
-    font-size: 1.8rem;
-    color: var(--secondary-clr);
-    display: block;
-}
-
 .cta-btn{
     background: linear-gradient(hsl(145, 15%, 60%), hsl(145, 15%, 55%));
     color: var(--black);
@@ -360,6 +363,12 @@ header{
     .primary-nav > li{
         border: none;
     }
+    .pil{
+        font-size: 1.8rem;
+        color: var(--secondary-clr);
+        display: block;
+    }
+
 }
 /* HEADER END */
 
@@ -393,7 +402,6 @@ header{
     font-size: 4rem;
     font-weight: 400;
     margin-bottom: 2rem;
-    font-family: smoothy, sans-serif;
     color: var(--secondary-clr);
 }
 .intro-text{
@@ -401,41 +409,33 @@ header{
     font-size: 1.3rem;
     text-align: center;
 }
-
 .broedtekst {
     font-size: 20px;
 }
-
-#home section:first-of-type{
-    margin-top: 2rem;
+section:first-of-type{
+    padding-top: 2rem;
 }
-#home section{
-    margin-bottom: 4rem;
-}
-#home section img{
-    box-shadow: 0 0 2px #000;
+section{
+    padding-bottom: 2rem;
 }
 .season h2{
-    font-family: smoothy, sans-serif;
     font-weight: 400;
     font-size: 2.5rem;
     color: var(--secondary-clr);
 }
 .season h3{
+    font-family: 'Oxygen', sans-serif;
     margin-bottom: 1rem;
 }
 .season p{
     max-width: 40ch;
     font-size: 1.2rem;
 }
-
 .season {
     min-height: 500px;
 }
-
 .gokaftegning {
-     margin-bottom: 30px;
-
+    margin-bottom: 30px;
 }
 .seasons-brown {
     min-height: 400px;
@@ -443,7 +443,6 @@ header{
     padding: 20px;
     margin-bottom: 20px;
 }
-
 .seasons-brown h2 {
     color: white;
     font-family: smoothy, sans-serif;
@@ -452,25 +451,20 @@ header{
     margin-bottom: 1rem;
     padding: 10px;
 }
-
 .seasons-brown p {
     color: white;
 }
-
 .saesonbilledercircle {
     max-width: 60%;
 }
-
 .season a {
     color: #796261;
     font-style: smoothy, sans-serif;
 }
-
 .stempelbilled {
     max-width: 80%;
     padding: 5px;
 }
-
 .stempelkort {
     min-height: 600px;
     background: url("../assets/img/stempelkort.png");
@@ -478,11 +472,9 @@ header{
     background-position: right;
     background-position-x: center;
 }
-
 .stempelkortbillede {
     max-width: 50%;
 }
-
 .stempelkort h2 {
     color: var(--secondary-clr);
     font-family: smoothy, sans-serif;
@@ -491,78 +483,49 @@ header{
     margin-bottom: 1rem;
     padding: 10px;
 }
-
 .stempelkort p {
     color: #796261;
 }
-
 .tegningh3 h3 {
     color: var(--secondary-clr);
 }
-
-
 .openinghours {
     max-width: 50%;
     margin: 20px;
 }
-
 .openhourdiv {
     min-height: 700px;
     background-image: url(../assets/img/blomster.JPG);
     background-position: center;
 }
-
 .infographic {
-    min-height: 600px;
     background: url(../assets/img/flowertext.png);
-    padding: 10px;
+    padding-block: 1rem;
 }
-
-
 .hvilkenkaffe {
-    max-width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid #80A290;
-    margin-bottom: 15px;
+    width: min(800px, 100%);
+    margin-inline: auto;
 }
-
-.lokation{
-    min-height: 500px;   
-    background-color: #80A290;
-}
-
 .location{
-    font-family:  smoothy, sans-serif;
-    color: var(--secondary-clr);
+    background-color: #80A290;
+    color: white;
+    padding-block: 2rem;
+}
+.location-heading{
     font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    margin-top: 50px;
-    color: white;
+    font-size: 3rem;
 }
-
-.text3{
-    font-family: 'Oxygen', sans-serif; 
-    line-height: 2rem;
-    font-size: 20px;
-    color: white;
+.location-text{
+    font-size: 1.25rem;
+    max-width: 40ch 
 }
-.mapouter{
-    min-width: 45%;
-    margin-top: 75px;
-    position:relative;
-    text-align:right;
-    height:350px;
-    width:600px;
+.location-text strong{
+    margin-bottom: 1rem;
+    display: inline-block;
 }
-
-.gmapcanvas{
-    overflow:hidden;
-    background:none!important;
-    height:350px;
-    width:600px;
+.gmap-canvas{
+    width: clamp(350px, 30rem, 40vw);
+    min-height: 240px;
 }
 
 .instafeed{
@@ -598,7 +561,6 @@ header{
 .image-list img[data-index="5"]{
     display: none;
 }
-
 #prev-image,
 #next-image{
     position: absolute;
@@ -636,6 +598,7 @@ header{
         transform: translateX(-50%) translateY(0);
     }
 }
+
 @media screen and (min-width: 600px) {
     .hero::before{
         content: "";
@@ -694,78 +657,12 @@ header{
 
 /* OM OS CONTENT START */
 
-/* Typografi */
-
-#om h1{
-    font-family: smoothy, sans-serif; 
-    font-weight: 400;
-    font-style: normal;
-    font-size: 60px;
-    color: var(--secondary-clr);
-    text-align: center;
-    background-color: var(--primary-clr);
-    padding-top: 5rem;
-}
-
-h3{
-    font-family:  smoothy, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 40px;
-    margin-top: 10px;
-    color: var(--secondary-clr);
-}
-
-.location{
-    font-family:  smoothy, sans-serif;
-    color: var(--secondary-clr);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    margin: block;  
-    color: white;
-}
-
-.underskrift{
-    font-family: smoothy, sans-serif; 
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    margin: block;
-    margin-top: 10px;
-}
-
-.text{
-    text-align: center;
-    font-family: 'Oxygen', sans-serif; 
-    max-width: 66ch;
-    font-size: 1.3rem;
-    padding-bottom: 7rem;
-}
-
-.text2{
-    font-family: 'Oxygen', sans-serif; 
-    line-height: 2rem;
-    font-size: 20px;
-}
-
-.text3{
-    font-family: 'Oxygen', sans-serif; 
-    line-height: 2rem;
-    font-size: 20px;
-    color: white;
-}
-
-.bannerbillede{
-    max-width: 100%;
-}
-
 .banner{
     position: relative;
     display: grid;
     overflow: hidden;
     height: auto;
-    max-height: 100vh;
+    max-height: calc(100vh - 152px);
 }
 .banner::after{
     content: "";
@@ -774,50 +671,15 @@ h3{
     background-color: rgb(0, 0, 0,);
     z-index: 15;
 }
-
-/* Billeder */
-
-.underimg{
-    box-shadow: 0 0 2px #000;
-    min-width: 45%;
-    margin-top: 75px;
-}
-
-.vogn{
-    min-height: 600px;   
-    background-color: white;
-}
-
-.lokation{
-    min-height: 500px;   
-    background-color: #80A290;
-}
-
-.udlev{
-    min-height: 600px;
-    background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
-}
-
-/* Map */
-
-.mapouter{
-    min-width: 45%;
-    margin-top: 75px;
-    position:relative;
-    text-align:right;
-    height:350px;
-    width:600px;
-}
-
-.gmapcanvas{
-    overflow:hidden;
-    background:none!important;
-    height:350px;
-    width:600px;
+.banner img{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: max(360px, 100%);
+    object-fit: fill;
 }
 
 @media screen and (min-width: 600px) {
-    .banner {
+    .banner::before {
         content: "";
         position: absolute;
         background-image: url(../assets/img/Chevron-down-45b.svg);
@@ -835,7 +697,92 @@ h3{
     }   
 }
 
+/* Typografi */
+
+#om h1{
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--secondary-clr);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.text{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif; 
+    max-width: 66ch;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+h3{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 10px;
+    color: var(--secondary-clr);
+}
+
+.underskrift{
+    font-family: smoothy, sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: block;
+    margin-top: 10px;
+}
+
+.text2{
+    font-family: 'Oxygen', sans-serif; 
+    line-height: 2rem;
+    font-size: 20px;
+}
+
+/* Billeder */
+
+.underimg{
+    box-shadow: 0 0 2px #000;
+    min-width: 45%;
+    margin-top: 75px;
+}
+
+.vogn{
+    min-height: 600px;   
+    background-color: white;
+}
+
+.udlev{
+    min-height: 600px;
+    background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
+}
+
+
 /* OM OS CONTENT END */
+
+/* LEVERANDØR CONTENT START */
+
+#leverandor h2 {
+    font-weight: 400;
+    font-size: 3.75rem;
+    color: var(--secondary-clr);
+    text-align: center;
+    padding-block: 20px;
+}
+#leverandor section{
+    min-height: 600px;
+    background-color: #fff;
+}
+.holybean {
+    background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
+}
+.leverandtext {
+    font-size: 1.25rem;
+}
+.img-45{
+    min-width: 45%;
+}
+
+/* LEVERANDØR CONTENT END */
 
 /* FOOTER START */
 footer{
