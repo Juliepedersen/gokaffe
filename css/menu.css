@@ -12,3 +12,47 @@
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
   }
+
+  .menuer {
+      min-height: 600px;
+
+  }
+
+  #zoomC {
+    /* (A) DIMENSIONS */
+    width: 450px;
+    height: 600px;
+    margin: 10px;
+   
+    /* (B) BACKGROUND IMAGE */
+    background: url("../assets/img/menu111.webp");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #zoomC1 {
+    /* (A) DIMENSIONS */
+    width: 450px;
+    height: 600px;
+    margin: 10px;
+   
+    /* (B) BACKGROUND IMAGE */
+    background: url("../assets/img/menu222.webp");
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  #zoomC2 {
+    /* (A) DIMENSIONS */
+    width: 450px;
+    height: 600px;
+    margin: 10px;
+   
+    /* (B) BACKGROUND IMAGE */
+    background: url("../assets/img/menu333.webp");
+    background-position: center;
+    background-size: cover;
+  }
+
+
