@@ -21,7 +21,7 @@
     width: max(360px, 100%);
     object-fit: fill;
 }
-h1{
+#home h1{
     text-align: center;
     font-size: 4rem;
     font-weight: 400;
@@ -160,9 +160,6 @@ section img{
     border: 5px solid #80A290;
     margin-bottom: 15px;
 }
-
-
-
 
 .lokation{
     min-height: 500px;   
