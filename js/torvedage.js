@@ -7,7 +7,7 @@ window.onload = function () {
         if(window.scrollY>=500) {
             EFFECT.style.opacity = '1';
             EFFECT.style.transform = 'translateX(0px)';
-            EFFECT.style.transition = '2s ease-in-out';
+            EFFECT.style.transition = '3s ease-in-out';
     }
     else {
         EFFECT.style.opacity = '0';
