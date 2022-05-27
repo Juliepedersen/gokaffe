@@ -9,58 +9,63 @@
 }
 
 
+
 body{
-background: linear-gradient(45deg,  hsl(147, 15%, 57%), rgb(33, 133, 49));
-min-height: 100vh;
-font-family: 'Oxygen', sans-serif;
-}
-
-#error h2{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-font-size: 10em;
-
-}
-
-.errortext2{
+    background: linear-gradient(45deg, #80A290, rgb(89, 153, 95));
+    min-height: 100vh;
+    font-family: 'Oxygen', sans-serif;
+    }
     
-    font-size: 3vw;
-    line-height: 1em;
-}
-
-#box{
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:  url("../assets/img/flowertext.png") var(--primary-clr);
-    box-shadow: 0 15px 30px rgba(red, green, blue, alpha);
-}
-
- .content{
-    max-width: 600px;
-    text-align: center;
-}
-
-
-
-.back {
-    position: relative;
-    margin-bottom: 20px;
-    color: green;
-    background: #fff;
-    font-weight: 300;
-    padding: 10px 20px;
-    display: inline-block;
-}
-
-a{
+    #box{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        right: 10%;
+        bottom: 10%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("../assets/img/flowertext.png")  var(--primary-clr);
+        
+    }
     
-    color: rgb(10, 95, 95);
-}
+    #box .content{
+        max-width: 600px;
+        text-align: center;
+    }
+    
+    
+    #box .content .errorh2{
+        font-size: 18vw;
+        color: #80A290;
+        line-height: 1em;
+    }
+    
+    #box .content .errorh4{
+        position: relative;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        color: green;
+        background: #fff;
+        font-weight: 300;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+    
+    #box .content .back{
+        color: #80A290;
+        font-size: 1.2em;
+    }
+    
+    #box .content a{
+        position: relative;
+        display: inline-block;
+        padding: 10px 25px;
+        background: #80A290;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 25px;
+        border-radius: 25px;
+        border-bottom: 4px solid rgb(10, 39, 8);
+    }
