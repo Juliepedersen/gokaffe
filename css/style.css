@@ -118,6 +118,9 @@ h3,
 h4{
     font-family: smoothy, sans-serif;
 }
+.paragraph{
+    font-size: 1.25rem;
+}
 
 /* GLOBAL CLASSES START*/
 
@@ -406,33 +409,10 @@ header{
 }
 .intro-text{
     max-width: 66ch;
-    font-size: 1.3rem;
     text-align: center;
 }
-.broedtekst {
-    font-size: 20px;
-}
-section:first-of-type{
-    padding-top: 2rem;
-}
 section{
-    padding-bottom: 2rem;
-}
-.season h2{
-    font-weight: 400;
-    font-size: 2.5rem;
-    color: var(--secondary-clr);
-}
-.season h3{
-    font-family: 'Oxygen', sans-serif;
-    margin-bottom: 1rem;
-}
-.season p{
-    max-width: 40ch;
-    font-size: 1.2rem;
-}
-.season {
-    min-height: 500px;
+    padding-block: 2rem;
 }
 .gokaftegning {
     margin-bottom: 30px;
@@ -445,7 +425,6 @@ section{
 }
 .seasons-brown h2 {
     color: white;
-    font-family: smoothy, sans-serif;
     font-weight: 400;
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -455,15 +434,18 @@ section{
     color: white;
 }
 .saesonbilledercircle {
-    max-width: 60%;
+    width: min(850px, 100%);
+}
+.season h2{
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--secondary-clr);
 }
 .season a {
     color: #796261;
-    font-style: smoothy, sans-serif;
 }
 .stempelbilled {
-    max-width: 80%;
-    padding: 5px;
+    width: min(800px, 100%);
 }
 .stempelkort {
     min-height: 600px;
@@ -486,17 +468,14 @@ section{
 .stempelkort p {
     color: #796261;
 }
-.tegningh3 h3 {
-    color: var(--secondary-clr);
-}
-.openinghours {
-    max-width: 50%;
-    margin: 20px;
-}
-.openhourdiv {
-    min-height: 700px;
+.flowers-bg {
+    min-height: 500px;
     background-image: url(../assets/img/blomster.JPG);
     background-position: center;
+}
+.openinghours {
+    width: min(800px, 100%);
+    margin-inline: auto;
 }
 .infographic {
     background: url(../assets/img/flowertext.png);
@@ -640,7 +619,6 @@ section{
     background-image: url("../assets/img/menu111.webp");
 }
 #zoomC1 {
-   
     background-image: url("../assets/img/menu222.webp");
 }
 #zoomC2 {
@@ -717,16 +695,13 @@ section{
 
 h3{
     font-weight: 300;
-    font-style: normal;
     font-size: 40px;
     margin-top: 10px;
     color: var(--secondary-clr);
 }
 
 .underskrift{
-    font-family: smoothy, sans-serif; 
     font-weight: 400;
-    font-style: normal;
     font-size: 40px;
     margin: block;
     margin-top: 10px;
@@ -775,16 +750,201 @@ h3{
 .holybean {
     background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
 }
-.leverandtext {
-    font-size: 1.25rem;
-}
 .img-45{
     min-width: 45%;
 }
 
 /* LEVERANDØR CONTENT END */
 
+/* SWAPCUP CONTENT START */
+
+.overskrift{
+    font-weight: 400;
+    font-size: 60px;
+    color: #796261;
+    text-align: center;
+    padding: 20px;
+}
+.linkswap{
+    text-decoration: none;
+    color:#80A290; 
+}
+.swapcuphowto {
+    min-height: 500px;
+    background-color: white;
+}
+.swapcupintro {
+    min-height: 600px;
+    background: url("../assets/img/flowertext.png") no-repeat, #ede9de;
+}
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* billeder */
+
+.stepbystep {
+    margin-inline: auto;
+    width: min(850px, 100%)
+}
+.beans {
+    min-height: 100%;
+    margin: auto;
+}
+
+/* SWAPCUP CONTENT END */
+
+/* GO HJUL CONTENT START */
+
+/*formular*/
+
+.formular {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    margin-block: 20px;
+  }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .kommentar input[type=text] {
+      padding: 10px;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: var(--green);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--secondary-clr);
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    color: grey;
+    resize: none;
+  }
+/* Typografi */
+
+
+.textform {
+    color: white;
+    font-size: 20px;
+    max-width: 80%;
+}
+
+#om h1{
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--secondary-clr);
+    text-align: center;
+    background-color: var(--primary-clr);
+    padding-top: 5rem;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 40px;
+    margin-top: 10px;
+    margin: block;
+    color: var(--secondary-clr);
+   
+}
+
+.location{
+    font-family:  smoothy, sans-serif;
+    color: var(--secondary-clr);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin: block;  
+    color: white;
+}
+
+.bring {
+    font-size: 50px;
+}
+
+
+.underskrift{
+    font-family: smoothy, sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: block;
+    margin-top: 10px;
+}
+
+.text{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif; 
+    max-width: 66ch;
+    font-size: 1.3rem;
+    padding-bottom: 7rem;
+   
+}
+
+.text2{
+    font-family: 'Oxygen', sans-serif; 
+    line-height: 2rem;
+    font-size: 20px;
+}
+
+.text3{
+    font-family: 'Oxygen', sans-serif; 
+    line-height: 2rem;
+    font-size: 20px;
+    color: white;
+}
+
+/* Billeder */
+
+.underimg {
+    box-shadow: 0 0 2px #000;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vogn{
+    min-height: 600px;   
+    background-color: white;
+}
+
+.lokation{
+    min-height: 500px;   
+    background-color: #80A290;
+}
+
+/* GO HJUL CONTENT END */
+
 /* FOOTER START */
+
 footer{
     min-height: 100px;
     padding-block: 1rem 2rem;
@@ -813,4 +973,5 @@ footer .socials svg {
     transition-timing-function: ease-in-out;
     transition-duration: 150ms;
 }
+
 /* FOOTER END */

@@ -9,13 +9,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gohjul.css">
     <link rel="stylesheet" href="https://use.typekit.net/fjg3mzm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <script defer src="js/om.js"></script>
+    <script defer src="js/burger.js"></script>
     <title>Go' Kaffe på Hjul - Go' Kaffe</title>
 </head>
 <body class="body">
@@ -71,12 +70,14 @@
         </div>
     </header>
     <main id="om">
-        <div class="banner"></div>
-        <img class="bannerbillede" src="assets/img/gokafhjulbil.webp" alt="rød kaffetruck">
+        <div class="banner">
+            <img class="bannerbillede" src="assets/img/gokafhjulbil.webp" alt="rød kaffetruck">
+        </div>
         <section class="wrapper flexc flex-ai-c">
             <h1>Få Go' Kaffe til dit næste arrangement</h1>
             <div class="flex-mobile gap-200 wrapper"></div>
-            <p class="text">Står du og mangler en kvalitetsgimmick til dit næste arrangement? Så står vi klar med vores Go' Kaffe på Hjul.
+            <p class="text">
+                Står du og mangler en kvalitetsgimmick til dit næste arrangement? Så står vi klar med vores Go' Kaffe på Hjul.
                 På bagladet af vores røde kaffetruck har vi installeret en lækker espressomaskine så vi kan lange frisk kaffe over ladet til enhver lejlighed. 
             </p>  
         </section> 
@@ -97,8 +98,8 @@
                         Så hvis du står og mangler kaffe til dit næste event, så kontakt os med din henvendelse i formularen nedenfor, eller giv os et kald. Vi står klar med både kopper, bønner og mælk og udvider gerne sortimentet vi medbringer hvis ønsket.
                         Hos Go' Kaffe tilbyder vi netop også lækkert bagværk og andre kolde såvel som varme drikke.
                     </p>
-                </div>
                     </div>
+                </div>
             </div>
         </div>
         <div class="lokation">
@@ -111,29 +112,26 @@
                     </p>
                     <br>
                     <p class="textform">
-                Du kan forvente at vi vender tilbage enten pr. mail eller telefon. Hvis du har preferencer er du velkommen til at skrive dem i kommentarfeltet. Vi glæder os til at høre fra dig!
-            </p>    
-            </div>
-            <div class="formulardiv">
-                <div class="formular">
-                    <form action="/action_page.php">
-                      <label for="fname">Navn</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn..">
-                  
-                      <label for="lname">E-mail</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Din e-mail..">
-
-                      <label for="lname">Telefon</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Dit telefonnummer..">
-
-                      <label class="kommentar" for="lname">Kommentar</label>
-                      <textarea>Skriv din forespørgsel her...</textarea>
-                    
-                      <input type="submit" value="Indsend">
-                    </form>
-                  </div>
+                        Du kan forvente at vi vender tilbage enten pr. mail eller telefon. Hvis du har preferencer er du velkommen til at skrive dem i kommentarfeltet. Vi glæder os til at høre fra dig!
+                    </p>    
                 </div>
+                <form class="formular" action="">
+                    <label for="fname">Navn</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn..">
+                
+                    <label for="lname">E-mail</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Din e-mail..">
+
+                    <label for="lname">Telefon</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Dit telefonnummer..">
+
+                    <label class="kommentar" for="lname">Kommentar</label>
+                    <textarea>Skriv din forespørgsel her...</textarea>
                     
+                    <input type="submit" value="Indsend">
+                </form>
+            </div> 
+        </div> 
     </main>
     <footer>
         <div class="wrapper flex-mobile flex-jc-sb flex-wrap gap-200">
