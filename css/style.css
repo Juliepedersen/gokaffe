@@ -434,7 +434,7 @@ section{
     color: white;
 }
 .saesonbilledercircle {
-    width: min(850px, 100%);
+    width: min(600px, 100%);
 }
 .season h2{
     font-weight: 400;
