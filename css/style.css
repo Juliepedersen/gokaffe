@@ -656,6 +656,10 @@ section{
     object-fit: fill;
 }
 
+.viergokaffe {
+    height: 300px;
+}
+
 @media screen and (min-width: 600px) {
     .banner::before {
         content: "";
