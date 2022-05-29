@@ -938,7 +938,8 @@ h3{
     object-fit: fill;
 }
 
-.torve-heading{  
+.torve-heading{
+    color: #796261;
     font-size: 2rem;
     margin-bottom: 1em;
 }
