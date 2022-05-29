@@ -15,7 +15,7 @@ const users = [
 function login(event) {
     const myUsername = username.value
     const myPassword = password.value
-    const url = "support.html";
+    const url = "error.html";
     let errorMsg = ""
     event.preventDefault()
     // Validare om vores input felter er tomme

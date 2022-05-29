@@ -269,16 +269,6 @@ header{
     position: relative;
     margin-bottom: .5rem;
 }
-.dropdown-menu .dropdown-btn::after{
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 2px;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-55%);
-    background-color: #fff;
-}
 .dropdown-menu li{
     white-space: nowrap;
 }
@@ -335,7 +325,7 @@ header{
 .burger[aria-expanded=true] .inner-burger::after {
     display: none;
 }
-.burger[aria-expanded=true] + nav .primary-nav{
+.primary-nav[data-visible=true]{
     display: flex;
 }
 @media screen and (min-width: 600px) {
