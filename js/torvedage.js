@@ -1,19 +1,12 @@
-window.onload = function () {
-    const EFFECT = document.querySelector ("#effect");
+const effect = document.querySelector(".effect")
+const banner = document.querySelector(".banner")
 
-    window.addEventListener ('scroll', scrollEffect);
+const torveObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        effect.classList.toggle("slide-in", !entry.isIntersecting)
+    })
+},{
+    threshold: ".8",
+})
 
-    function scrollEffect () {
-        if(window.scrollY>=500) {
-            EFFECT.style.opacity = '1';
-            EFFECT.style.transform = 'translateX(0px)';
-            EFFECT.style.transition = '3s ease-in-out';
-    }
-    else {
-        EFFECT.style.opacity = '0';
-        EFFECT.style.transform = 'translateX(-50px)';
-    }
-    }
-    scrollEffect ()
-}
-
+torveObs.observe(banner)

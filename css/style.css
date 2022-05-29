@@ -158,6 +158,9 @@ h4{
 .flex-jc-sb{
     justify-content: space-between;
 }
+.flex-jc-sa{
+    justify-content: space-around;
+}
 .flex-jc-fe{
     justify-content: flex-end;
 }
@@ -169,6 +172,9 @@ h4{
 }
 .flex-wrap{
     flex-wrap: wrap;
+}
+.flex-b-33{
+    flex-basis: 33.333333%;
 }
 .gap-100{
     gap: 1rem;
@@ -369,13 +375,19 @@ header{
 
 /* LANDING PAGE START */
 
-.hero{
+.hero,
+.banner{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
     height: auto;
-    max-height: 100vh;
+}
+.hero > *,
+.banner > *{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: max(360px, 100%);
+    object-fit: fill;
 }
 .hero::after{
     content: "";
@@ -383,15 +395,18 @@ header{
     grid-row: 1/-1;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0,);
+    background-color: rgb(0, 0, 0, 0.2);
     z-index: 15;
 }
-.hero video{
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    width: max(360px, 100%);
-    object-fit: fill;
+
+.hero{
+    max-height: 100vh;
 }
+
+.banner{
+    max-height: calc(100vh - 152px);
+}
+
 #home h1{
     text-align: center;
     font-size: 4rem;
@@ -571,7 +586,8 @@ section{
 }
 
 @media screen and (min-width: 600px) {
-    .hero::before{
+    .hero::before,
+    .banner::before{
         content: "";
         position: absolute;
         background-image: url(../assets/img/Chevron-down-45b.svg);
@@ -627,48 +643,8 @@ section{
 
 /* OM OS CONTENT START */
 
-.banner{
-    position: relative;
-    display: grid;
-    overflow: hidden;
-    height: auto;
-    max-height: calc(100vh - 152px);
-}
-.banner::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0,);
-    z-index: 15;
-}
-.banner img{
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    width: max(360px, 100%);
-    object-fit: fill;
-}
-
 .viergokaffe {
     height: 300px;
-}
-
-@media screen and (min-width: 600px) {
-    .banner::before {
-        content: "";
-        position: absolute;
-        background-image: url(../assets/img/Chevron-down-45b.svg);
-        background-repeat: no-repeat;
-        z-index: 20;
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 70px;
-        aspect-ratio: 2/1;
-        animation-name: bounce;
-        animation-duration: 2500ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }   
 }
 
 /* Typografi */
@@ -938,6 +914,39 @@ h3{
 }
 
 /* GO HJUL CONTENT END */
+
+/* TORVEDAGE CONTENT START */
+
+.paralax-banner {
+    min-height: calc(100vh - 152px);
+    background-image: url('../assets/img/torvedagebanner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: max(360px, 100%);
+    object-fit: fill;
+}
+
+.torve-heading{  
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+.effect{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1000ms ease-out;
+    transition-property: opacity, transform;
+}
+
+.slide-in{
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* TORVEDAGE CONTENT END */
 
 /* FOOTER START */
 
