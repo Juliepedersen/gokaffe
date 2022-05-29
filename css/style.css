@@ -158,9 +158,6 @@ h4{
 .flex-jc-sb{
     justify-content: space-between;
 }
-.flex-jc-sa{
-    justify-content: space-around;
-}
 .flex-jc-fe{
     justify-content: flex-end;
 }
@@ -172,9 +169,6 @@ h4{
 }
 .flex-wrap{
     flex-wrap: wrap;
-}
-.flex-b-33{
-    flex-basis: 33.333333%;
 }
 .gap-100{
     gap: 1rem;
@@ -198,6 +192,21 @@ header{
     width: 100%;
     box-shadow: 0 3px 5px hsla(216, 12%, 25%, 0.3);
 }
+.hero-nav{
+    background-color: hsla(0, 0%, 0%, 0.4);
+}
+.hero-nav .logo svg,
+.hero-nav .dropdown-icon svg{
+    fill: var(--primary-clr);
+}
+.hero-nav .link, 
+.hero-nav .dropdown-btn,
+.hero-nav .pil{
+    color: var(--primary-clr);
+}
+.fixed-header{
+    position: fixed;
+}
 .logo{
     padding-block: .5rem;
 }
@@ -211,12 +220,11 @@ header{
     list-style: none;
     position: absolute;
     left: 0;
-    top: 99%;
+    top: 100%;
     width: 100%;
     padding-block: .5em 1em;
     background-color: var(--primary-clr);
     display: none;
-    box-shadow: 0 3px 5px hsla(216, 12%, 25%, 0.3);
 }
 .primary-nav > li {
     text-align: center;
@@ -275,6 +283,16 @@ header{
     position: relative;
     margin-bottom: .5rem;
 }
+.dropdown-menu .dropdown-btn::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-55%);
+    background-color: #fff;
+}
 .dropdown-menu li{
     white-space: nowrap;
 }
@@ -331,25 +349,10 @@ header{
 .burger[aria-expanded=true] .inner-burger::after {
     display: none;
 }
-.primary-nav[data-visible=true]{
+.burger[aria-expanded=true] + nav .primary-nav{
     display: flex;
 }
 @media screen and (min-width: 600px) {
-    .fixed-header{
-        position: fixed;
-    }
-    .hero-nav{
-        background-color: hsla(0, 0%, 0%, 0.4);
-    }
-    .hero-nav .logo svg,
-    .hero-nav .dropdown-icon svg{
-        fill: var(--primary-clr);
-    }
-    .hero-nav .link, 
-    .hero-nav .dropdown-btn,
-    .hero-nav .pil{
-        color: var(--primary-clr);
-    }
     .burger{
         display: none;
     }
@@ -359,7 +362,6 @@ header{
         padding: 0;
         width: auto;
         background-color: transparent;
-        box-shadow: none;
     }
     .primary-nav > li{
         border: none;
@@ -375,19 +377,13 @@ header{
 
 /* LANDING PAGE START */
 
-.hero,
-.banner{
+.hero{
     position: relative;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
     height: auto;
-}
-.hero > *,
-.banner > *{
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    width: max(360px, 100%);
-    object-fit: fill;
+    max-height: 100vh;
 }
 .hero::after{
     content: "";
@@ -395,18 +391,15 @@ header{
     grid-row: 1/-1;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0,);
     z-index: 15;
 }
-
-.hero{
-    max-height: 100vh;
+.hero video{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: max(360px, 100%);
+    object-fit: fill;
 }
-
-.banner{
-    max-height: calc(100vh - 152px);
-}
-
 #home h1{
     text-align: center;
     font-size: 4rem;
@@ -441,7 +434,7 @@ section{
     color: white;
 }
 .saesonbilledercircle {
-    width: min(600px, 100%);
+    width: min(850px, 100%);
 }
 .season h2{
     font-weight: 400;
@@ -452,7 +445,7 @@ section{
     color: #796261;
 }
 .stempelbilled {
-    width: min(500px, 100%);
+    width: min(800px, 100%);
 }
 .stempelkort {
     min-height: 600px;
@@ -481,7 +474,7 @@ section{
     background-position: center;
 }
 .openinghours {
-    width: min(650px, 100%);
+    width: min(800px, 100%);
     margin-inline: auto;
 }
 .infographic {
@@ -489,7 +482,7 @@ section{
     padding-block: 1rem;
 }
 .hvilkenkaffe {
-    width: min(600px, 100%);
+    width: min(800px, 100%);
     margin-inline: auto;
 }
 .location{
@@ -510,7 +503,7 @@ section{
     display: inline-block;
 }
 .gmap-canvas{
-    width: clamp(300px, 30rem, 40vw);
+    width: clamp(350px, 30rem, 40vw);
     min-height: 240px;
 }
 
@@ -586,8 +579,7 @@ section{
 }
 
 @media screen and (min-width: 600px) {
-    .hero::before,
-    .banner::before{
+    .hero::before{
         content: "";
         position: absolute;
         background-image: url(../assets/img/Chevron-down-45b.svg);
@@ -619,7 +611,6 @@ section{
 }
 @media screen and (min-width: 600px) {
     .menu-wrapper{
-        width: clamp(16rem, 90vw, 85rem);
         padding-inline: 1rem;
     }
 }
@@ -643,8 +634,48 @@ section{
 
 /* OM OS CONTENT START */
 
+.banner{
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    height: auto;
+    max-height: calc(100vh - 152px);
+}
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,);
+    z-index: 15;
+}
+.banner img{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: max(360px, 100%);
+    object-fit: fill;
+}
+
 .viergokaffe {
     height: 300px;
+}
+
+@media screen and (min-width: 600px) {
+    .banner::before {
+        content: "";
+        position: absolute;
+        background-image: url(../assets/img/Chevron-down-45b.svg);
+        background-repeat: no-repeat;
+        z-index: 20;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        aspect-ratio: 2/1;
+        animation-name: bounce;
+        animation-duration: 2500ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }   
 }
 
 /* Typografi */
@@ -914,39 +945,6 @@ h3{
 }
 
 /* GO HJUL CONTENT END */
-
-/* TORVEDAGE CONTENT START */
-
-.paralax-banner {
-    min-height: calc(100vh - 152px);
-    background-image: url('../assets/img/torvedagebanner.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    width: max(360px, 100%);
-    object-fit: fill;
-}
-
-.torve-heading{  
-    font-size: 2rem;
-    margin-bottom: 1em;
-}
-.effect{
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: 1000ms ease-out;
-    transition-property: opacity, transform;
-}
-
-.slide-in{
-    opacity: 1;
-    transform: translate(0);
-}
-
-/* TORVEDAGE CONTENT END */
 
 /* FOOTER START */
 
