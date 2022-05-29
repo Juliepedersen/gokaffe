@@ -45,6 +45,7 @@
 
 .torvecontent img{
     max-width: 100%;
+    box-shadow: 0 0 2px #000;
 }
 
 .torvedag2 {
@@ -61,6 +62,7 @@
 .kaffecontent {
     flex-basis: 33.33%;
     min-width: 400px;
+   
 }
 .kaffecontent h2 {
     
