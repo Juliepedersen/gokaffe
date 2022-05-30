@@ -508,6 +508,7 @@ section{
 .location-heading{
     font-weight: 400;
     font-size: 3rem;
+    color: white;
 }
 .location-text{
     font-size: 1.25rem;
@@ -846,15 +847,6 @@ input[type=text], select {
     text-align: center;
     background-color: var(--primary-clr);
     padding-top: 5rem;
-}
-
-h3{
-    font-weight: 300;
-    font-size: 40px;
-    margin-top: 10px;
-    margin: block;
-    color: var(--secondary-clr);
-   
 }
 
 .bring {
