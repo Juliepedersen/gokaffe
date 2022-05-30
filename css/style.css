@@ -449,7 +449,7 @@ section{
     color: white;
 }
 .saesonbilledercircle {
-    width: min(850px, 100%);
+    width: min(800px, 100%);
 }
 .season h2{
     font-weight: 400;
@@ -460,7 +460,7 @@ section{
     color: #796261;
 }
 .stempelbilled {
-    width: min(800px, 100%);
+    width: min(500px, 100%);
 }
 .stempelkort {
     min-height: 600px;
@@ -489,7 +489,7 @@ section{
     background-position: center;
 }
 .openinghours {
-    width: min(800px, 100%);
+    width: min(600px, 100%);
     margin-inline: auto;
 }
 .infographic {
@@ -497,7 +497,7 @@ section{
     padding-block: 1rem;
 }
 .hvilkenkaffe {
-    width: min(800px, 100%);
+    width: min(600px, 100%);
     margin-inline: auto;
 }
 .location{

@@ -33,6 +33,7 @@ body{
     #box .content{
         max-width: 600px;
         text-align: center;
+        
     }
     
     
@@ -40,6 +41,7 @@ body{
         font-size: 18vw;
         color: #80A290;
         line-height: 1em;
+        
     }
     
     #box .content .errorh4{
@@ -51,11 +53,14 @@ body{
         font-weight: 300;
         padding: 10px 20px;
         display: inline-block;
+        
+        
     }
     
     #box .content .back{
-        color: #80A290;
+        color: #ffffff;
         font-size: 1.2em;
+        
     }
     
     #box .content a{
@@ -68,4 +73,5 @@ body{
         margin-top: 25px;
         border-radius: 25px;
         border-bottom: 4px solid rgb(10, 39, 8);
+        
     }
