@@ -628,6 +628,7 @@ section{
 @media screen and (min-width: 600px) {
     .menu-wrapper{
         padding-inline: 1rem;
+        width: clamp(16rem, 90vw, 85rem);
     }
 }
 #zoomC {
