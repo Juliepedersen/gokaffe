@@ -856,16 +856,6 @@ h3{
    
 }
 
-.location{
-    font-family:  smoothy, sans-serif;
-    color: var(--secondary-clr);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    margin: block;  
-    color: white;
-}
-
 .bring {
     font-size: 50px;
 }
@@ -914,11 +904,6 @@ h3{
 .vogn{
     min-height: 600px;   
     background-color: white;
-}
-
-.lokation{
-    min-height: 500px;   
-    background-color: #80A290;
 }
 
 /* GO HJUL CONTENT END */
