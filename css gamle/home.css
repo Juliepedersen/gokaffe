@@ -187,6 +187,9 @@ section img{
     font-size: 20px;
     color: white;
 }
+
+/* Kilde til map generator (Google,2022)https://google-map-generator.com/  Set 15/05/2022*/
+
 .mapouter{
     min-width: 45%;
     margin-top: 75px;
